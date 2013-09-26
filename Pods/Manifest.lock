@@ -1,0 +1,19 @@
+PODS:
+  - Facebook-iOS-SDK (3.8.0)
+  - OCHamcrest (3.0.0)
+  - OCMock (2.2.1)
+  - Parse (1.2.15):
+    - Facebook-iOS-SDK (~> 3.7)
+
+DEPENDENCIES:
+  - OCHamcrest
+  - OCMock
+  - Parse
+
+SPEC CHECKSUMS:
+  Facebook-iOS-SDK: 55a22fe8bcaacd638cde9014af6b3ee85f4d71fb
+  OCHamcrest: 739added27df87b26adb60ab5aa14b7e3cf58afe
+  OCMock: 80e4cfbc71a0e1bd28caf10a9fda27da7c4c8402
+  Parse: 200f5d714e38ed4c74e93d159e6fabaf2ab8d914
+
+COCOAPODS: 0.25.0
