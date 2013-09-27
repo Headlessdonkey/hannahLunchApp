@@ -1,0 +1,28 @@
+PODS:
+  - AFNetworking (1.3.3)
+  - Facebook-iOS-SDK (3.8.0)
+  - MBProgressHUD (0.8)
+  - OCHamcrest (3.0.0)
+  - OCMock (2.2.1)
+  - Parse (1.2.15):
+    - Facebook-iOS-SDK (~> 3.7)
+  - UIAlertView+Blocks (0.7)
+
+DEPENDENCIES:
+  - AFNetworking (~> 1.3.3)
+  - MBProgressHUD
+  - OCHamcrest
+  - OCMock
+  - Parse
+  - UIAlertView+Blocks
+
+SPEC CHECKSUMS:
+  AFNetworking: 0700ec7a58c36ad217173e167f6e4df7270df66b
+  Facebook-iOS-SDK: 55a22fe8bcaacd638cde9014af6b3ee85f4d71fb
+  MBProgressHUD: 2bbc6f470111daf7f3eaa4eb12b8cbf01c4c0622
+  OCHamcrest: 739added27df87b26adb60ab5aa14b7e3cf58afe
+  OCMock: 80e4cfbc71a0e1bd28caf10a9fda27da7c4c8402
+  Parse: 200f5d714e38ed4c74e93d159e6fabaf2ab8d914
+  UIAlertView+Blocks: 7e876c2bace976306640443745b57912565d840d
+
+COCOAPODS: 0.25.0
