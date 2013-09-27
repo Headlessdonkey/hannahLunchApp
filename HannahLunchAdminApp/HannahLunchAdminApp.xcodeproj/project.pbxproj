@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		844F06DD17F511B600BD1AC8 /* PhotoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844F06D917F511B600BD1AC8 /* PhotoDetailViewController.m */; };
+		844F06E117F513FA00BD1AC8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844F06D617F511B600BD1AC8 /* ViewController.m */; };
+		844F06E417F5153D00BD1AC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844F06E217F5153D00BD1AC8 /* Main.storyboard */; };
+		844F06E817F5209900BD1AC8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844F06E717F5209900BD1AC8 /* SystemConfiguration.framework */; };
+		844F06EA17F520A300BD1AC8 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844F06E917F520A300BD1AC8 /* MobileCoreServices.framework */; };
+		84CD7D1417F4FD5900AEFE73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CD7D1317F4FD5900AEFE73 /* Foundation.framework */; };
+		84CD7D1617F4FD5900AEFE73 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CD7D1517F4FD5900AEFE73 /* CoreGraphics.framework */; };
+		84CD7D1817F4FD5900AEFE73 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CD7D1717F4FD5900AEFE73 /* UIKit.framework */; };
+		84CD7D1E17F4FD5900AEFE73 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84CD7D1C17F4FD5900AEFE73 /* InfoPlist.strings */; };
+		84CD7D2017F4FD5900AEFE73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD7D1F17F4FD5900AEFE73 /* main.m */; };
+		84CD7D2417F4FD5900AEFE73 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD7D2317F4FD5900AEFE73 /* AppDelegate.m */; };
+		84CD7D2C17F4FD5900AEFE73 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CD7D2B17F4FD5900AEFE73 /* Images.xcassets */; };
+		84CD7D3317F4FD5900AEFE73 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CD7D3217F4FD5900AEFE73 /* XCTest.framework */; };
+		84CD7D3417F4FD5A00AEFE73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CD7D1317F4FD5900AEFE73 /* Foundation.framework */; };
+		84CD7D3517F4FD5A00AEFE73 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CD7D1717F4FD5900AEFE73 /* UIKit.framework */; };
+		84CD7D3D17F4FD5A00AEFE73 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84CD7D3B17F4FD5A00AEFE73 /* InfoPlist.strings */; };
+		84CD7D3F17F4FD5A00AEFE73 /* HannahLunchAdminAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD7D3E17F4FD5A00AEFE73 /* HannahLunchAdminAppTests.m */; };
+		84CD7D5217F50F7900AEFE73 /* ParseLogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84CD7D4C17F50F7900AEFE73 /* ParseLogo.jpg */; };
+		84CD7D5317F50F7900AEFE73 /* Crowd.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84CD7D4D17F50F7900AEFE73 /* Crowd.jpg */; };
+		84CD7D5417F50F7900AEFE73 /* Desert.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84CD7D4E17F50F7900AEFE73 /* Desert.jpg */; };
+		84CD7D5517F50F7900AEFE73 /* Lime.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84CD7D4F17F50F7900AEFE73 /* Lime.jpg */; };
+		84CD7D5617F50F7900AEFE73 /* Sunflowers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84CD7D5017F50F7900AEFE73 /* Sunflowers.jpg */; };
+		84CD7D5717F50F7900AEFE73 /* 37x-Checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 84CD7D5117F50F7900AEFE73 /* 37x-Checkmark.png */; };
+		E816FD5368BF4824B9C2F94F /* libPods-HannahLunchAdminAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71CD3B02B0154D3B886000B6 /* libPods-HannahLunchAdminAppTests.a */; };
+		F1E932FF36434BF6801A6280 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A22928C310E4E92AB4C3BCE /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84CD7D3617F4FD5A00AEFE73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CD7D0817F4FD5900AEFE73 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84CD7D0F17F4FD5900AEFE73;
+			remoteInfo = HannahLunchAdminApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2A22928C310E4E92AB4C3BCE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		71CD3B02B0154D3B886000B6 /* libPods-HannahLunchAdminAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HannahLunchAdminAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		844F06D517F511B600BD1AC8 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		844F06D617F511B600BD1AC8 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		844F06D817F511B600BD1AC8 /* PhotoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoDetailViewController.h; sourceTree = "<group>"; };
+		844F06D917F511B600BD1AC8 /* PhotoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoDetailViewController.m; sourceTree = "<group>"; };
+		844F06E317F5153D00BD1AC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		844F06E717F5209900BD1AC8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		844F06E917F520A300BD1AC8 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		84C7D5A9550E4A4BA90943A4 /* Pods-HannahLunchAdminAppTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HannahLunchAdminAppTests.xcconfig"; path = "Pods/Pods-HannahLunchAdminAppTests.xcconfig"; sourceTree = "<group>"; };
+		84CD7D1017F4FD5900AEFE73 /* HannahLunchAdminApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HannahLunchAdminApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84CD7D1317F4FD5900AEFE73 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		84CD7D1517F4FD5900AEFE73 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		84CD7D1717F4FD5900AEFE73 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		84CD7D1B17F4FD5900AEFE73 /* HannahLunchAdminApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HannahLunchAdminApp-Info.plist"; sourceTree = "<group>"; };
+		84CD7D1D17F4FD5900AEFE73 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		84CD7D1F17F4FD5900AEFE73 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84CD7D2117F4FD5900AEFE73 /* HannahLunchAdminApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HannahLunchAdminApp-Prefix.pch"; sourceTree = "<group>"; };
+		84CD7D2217F4FD5900AEFE73 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		84CD7D2317F4FD5900AEFE73 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		84CD7D2B17F4FD5900AEFE73 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		84CD7D3117F4FD5900AEFE73 /* HannahLunchAdminAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HannahLunchAdminAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84CD7D3217F4FD5900AEFE73 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		84CD7D3A17F4FD5A00AEFE73 /* HannahLunchAdminAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HannahLunchAdminAppTests-Info.plist"; sourceTree = "<group>"; };
+		84CD7D3C17F4FD5A00AEFE73 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		84CD7D3E17F4FD5A00AEFE73 /* HannahLunchAdminAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HannahLunchAdminAppTests.m; sourceTree = "<group>"; };
+		84CD7D4C17F50F7900AEFE73 /* ParseLogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ParseLogo.jpg; sourceTree = "<group>"; };
+		84CD7D4D17F50F7900AEFE73 /* Crowd.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Crowd.jpg; sourceTree = "<group>"; };
+		84CD7D4E17F50F7900AEFE73 /* Desert.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Desert.jpg; sourceTree = "<group>"; };
+		84CD7D4F17F50F7900AEFE73 /* Lime.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Lime.jpg; sourceTree = "<group>"; };
+		84CD7D5017F50F7900AEFE73 /* Sunflowers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sunflowers.jpg; sourceTree = "<group>"; };
+		84CD7D5117F50F7900AEFE73 /* 37x-Checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "37x-Checkmark.png"; sourceTree = "<group>"; };
+		E23F1C0A414A424A91D4C643 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84CD7D0D17F4FD5900AEFE73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				844F06EA17F520A300BD1AC8 /* MobileCoreServices.framework in Frameworks */,
+				844F06E817F5209900BD1AC8 /* SystemConfiguration.framework in Frameworks */,
+				84CD7D1617F4FD5900AEFE73 /* CoreGraphics.framework in Frameworks */,
+				84CD7D1817F4FD5900AEFE73 /* UIKit.framework in Frameworks */,
+				84CD7D1417F4FD5900AEFE73 /* Foundation.framework in Frameworks */,
+				F1E932FF36434BF6801A6280 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84CD7D2E17F4FD5900AEFE73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CD7D3317F4FD5900AEFE73 /* XCTest.framework in Frameworks */,
+				84CD7D3517F4FD5A00AEFE73 /* UIKit.framework in Frameworks */,
+				84CD7D3417F4FD5A00AEFE73 /* Foundation.framework in Frameworks */,
+				E816FD5368BF4824B9C2F94F /* libPods-HannahLunchAdminAppTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84CD7D0717F4FD5900AEFE73 = {
+			isa = PBXGroup;
+			children = (
+				84CD7D1917F4FD5900AEFE73 /* HannahLunchAdminApp */,
+				84CD7D3817F4FD5A00AEFE73 /* HannahLunchAdminAppTests */,
+				84CD7D1217F4FD5900AEFE73 /* Frameworks */,
+				84CD7D1117F4FD5900AEFE73 /* Products */,
+				E23F1C0A414A424A91D4C643 /* Pods.xcconfig */,
+				84C7D5A9550E4A4BA90943A4 /* Pods-HannahLunchAdminAppTests.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		84CD7D1117F4FD5900AEFE73 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84CD7D1017F4FD5900AEFE73 /* HannahLunchAdminApp.app */,
+				84CD7D3117F4FD5900AEFE73 /* HannahLunchAdminAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84CD7D1217F4FD5900AEFE73 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				844F06E917F520A300BD1AC8 /* MobileCoreServices.framework */,
+				844F06E717F5209900BD1AC8 /* SystemConfiguration.framework */,
+				84CD7D1317F4FD5900AEFE73 /* Foundation.framework */,
+				84CD7D1517F4FD5900AEFE73 /* CoreGraphics.framework */,
+				84CD7D1717F4FD5900AEFE73 /* UIKit.framework */,
+				84CD7D3217F4FD5900AEFE73 /* XCTest.framework */,
+				2A22928C310E4E92AB4C3BCE /* libPods.a */,
+				71CD3B02B0154D3B886000B6 /* libPods-HannahLunchAdminAppTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84CD7D1917F4FD5900AEFE73 /* HannahLunchAdminApp */ = {
+			isa = PBXGroup;
+			children = (
+				84CD7D2217F4FD5900AEFE73 /* AppDelegate.h */,
+				84CD7D2317F4FD5900AEFE73 /* AppDelegate.m */,
+				844F06D517F511B600BD1AC8 /* ViewController.h */,
+				844F06D617F511B600BD1AC8 /* ViewController.m */,
+				844F06D817F511B600BD1AC8 /* PhotoDetailViewController.h */,
+				844F06D917F511B600BD1AC8 /* PhotoDetailViewController.m */,
+				844F06E217F5153D00BD1AC8 /* Main.storyboard */,
+				84CD7D2B17F4FD5900AEFE73 /* Images.xcassets */,
+				84CD7D1A17F4FD5900AEFE73 /* Supporting Files */,
+			);
+			path = HannahLunchAdminApp;
+			sourceTree = "<group>";
+		};
+		84CD7D1A17F4FD5900AEFE73 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84CD7D4C17F50F7900AEFE73 /* ParseLogo.jpg */,
+				84CD7D4D17F50F7900AEFE73 /* Crowd.jpg */,
+				84CD7D4E17F50F7900AEFE73 /* Desert.jpg */,
+				84CD7D4F17F50F7900AEFE73 /* Lime.jpg */,
+				84CD7D5017F50F7900AEFE73 /* Sunflowers.jpg */,
+				84CD7D5117F50F7900AEFE73 /* 37x-Checkmark.png */,
+				84CD7D1B17F4FD5900AEFE73 /* HannahLunchAdminApp-Info.plist */,
+				84CD7D1C17F4FD5900AEFE73 /* InfoPlist.strings */,
+				84CD7D1F17F4FD5900AEFE73 /* main.m */,
+				84CD7D2117F4FD5900AEFE73 /* HannahLunchAdminApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84CD7D3817F4FD5A00AEFE73 /* HannahLunchAdminAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				84CD7D3E17F4FD5A00AEFE73 /* HannahLunchAdminAppTests.m */,
+				84CD7D3917F4FD5A00AEFE73 /* Supporting Files */,
+			);
+			path = HannahLunchAdminAppTests;
+			sourceTree = "<group>";
+		};
+		84CD7D3917F4FD5A00AEFE73 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84CD7D3A17F4FD5A00AEFE73 /* HannahLunchAdminAppTests-Info.plist */,
+				84CD7D3B17F4FD5A00AEFE73 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84CD7D0F17F4FD5900AEFE73 /* HannahLunchAdminApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84CD7D4217F4FD5A00AEFE73 /* Build configuration list for PBXNativeTarget "HannahLunchAdminApp" */;
+			buildPhases = (
+				513392F208CD427D878D3C57 /* Check Pods Manifest.lock */,
+				84CD7D0C17F4FD5900AEFE73 /* Sources */,
+				84CD7D0D17F4FD5900AEFE73 /* Frameworks */,
+				84CD7D0E17F4FD5900AEFE73 /* Resources */,
+				473C82E81F834C069C663FD7 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HannahLunchAdminApp;
+			productName = HannahLunchAdminApp;
+			productReference = 84CD7D1017F4FD5900AEFE73 /* HannahLunchAdminApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84CD7D3017F4FD5900AEFE73 /* HannahLunchAdminAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84CD7D4517F4FD5A00AEFE73 /* Build configuration list for PBXNativeTarget "HannahLunchAdminAppTests" */;
+			buildPhases = (
+				1C308FF451B846E382F5B16D /* Check Pods Manifest.lock */,
+				84CD7D2D17F4FD5900AEFE73 /* Sources */,
+				84CD7D2E17F4FD5900AEFE73 /* Frameworks */,
+				84CD7D2F17F4FD5900AEFE73 /* Resources */,
+				0F78AC2B6B9342FEAA4387F5 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84CD7D3717F4FD5A00AEFE73 /* PBXTargetDependency */,
+			);
+			name = HannahLunchAdminAppTests;
+			productName = HannahLunchAdminAppTests;
+			productReference = 84CD7D3117F4FD5900AEFE73 /* HannahLunchAdminAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84CD7D0817F4FD5900AEFE73 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = uShip;
+				TargetAttributes = {
+					84CD7D0F17F4FD5900AEFE73 = {
+						DevelopmentTeam = 3EQ592D694;
+					};
+					84CD7D3017F4FD5900AEFE73 = {
+						TestTargetID = 84CD7D0F17F4FD5900AEFE73;
+					};
+				};
+			};
+			buildConfigurationList = 84CD7D0B17F4FD5900AEFE73 /* Build configuration list for PBXProject "HannahLunchAdminApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84CD7D0717F4FD5900AEFE73;
+			productRefGroup = 84CD7D1117F4FD5900AEFE73 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84CD7D0F17F4FD5900AEFE73 /* HannahLunchAdminApp */,
+				84CD7D3017F4FD5900AEFE73 /* HannahLunchAdminAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84CD7D0E17F4FD5900AEFE73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CD7D5417F50F7900AEFE73 /* Desert.jpg in Resources */,
+				84CD7D5217F50F7900AEFE73 /* ParseLogo.jpg in Resources */,
+				84CD7D2C17F4FD5900AEFE73 /* Images.xcassets in Resources */,
+				844F06E417F5153D00BD1AC8 /* Main.storyboard in Resources */,
+				84CD7D5317F50F7900AEFE73 /* Crowd.jpg in Resources */,
+				84CD7D1E17F4FD5900AEFE73 /* InfoPlist.strings in Resources */,
+				84CD7D5617F50F7900AEFE73 /* Sunflowers.jpg in Resources */,
+				84CD7D5517F50F7900AEFE73 /* Lime.jpg in Resources */,
+				84CD7D5717F50F7900AEFE73 /* 37x-Checkmark.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84CD7D2F17F4FD5900AEFE73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CD7D3D17F4FD5A00AEFE73 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F78AC2B6B9342FEAA4387F5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-HannahLunchAdminAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1C308FF451B846E382F5B16D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		473C82E81F834C069C663FD7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		513392F208CD427D878D3C57 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84CD7D0C17F4FD5900AEFE73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CD7D2417F4FD5900AEFE73 /* AppDelegate.m in Sources */,
+				844F06DD17F511B600BD1AC8 /* PhotoDetailViewController.m in Sources */,
+				844F06E117F513FA00BD1AC8 /* ViewController.m in Sources */,
+				84CD7D2017F4FD5900AEFE73 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84CD7D2D17F4FD5900AEFE73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CD7D3F17F4FD5A00AEFE73 /* HannahLunchAdminAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84CD7D3717F4FD5A00AEFE73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84CD7D0F17F4FD5900AEFE73 /* HannahLunchAdminApp */;
+			targetProxy = 84CD7D3617F4FD5A00AEFE73 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		844F06E217F5153D00BD1AC8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				844F06E317F5153D00BD1AC8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84CD7D1C17F4FD5900AEFE73 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84CD7D1D17F4FD5900AEFE73 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		84CD7D3B17F4FD5A00AEFE73 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84CD7D3C17F4FD5A00AEFE73 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84CD7D4017F4FD5A00AEFE73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		84CD7D4117F4FD5A00AEFE73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84CD7D4317F4FD5A00AEFE73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E23F1C0A414A424A91D4C643 /* Pods.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HannahLunchAdminApp/HannahLunchAdminApp-Prefix.pch";
+				INFOPLIST_FILE = "HannahLunchAdminApp/HannahLunchAdminApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		84CD7D4417F4FD5A00AEFE73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E23F1C0A414A424A91D4C643 /* Pods.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HannahLunchAdminApp/HannahLunchAdminApp-Prefix.pch";
+				INFOPLIST_FILE = "HannahLunchAdminApp/HannahLunchAdminApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		84CD7D4617F4FD5A00AEFE73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84C7D5A9550E4A4BA90943A4 /* Pods-HannahLunchAdminAppTests.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HannahLunchAdminApp.app/HannahLunchAdminApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HannahLunchAdminApp/HannahLunchAdminApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HannahLunchAdminAppTests/HannahLunchAdminAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		84CD7D4717F4FD5A00AEFE73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84C7D5A9550E4A4BA90943A4 /* Pods-HannahLunchAdminAppTests.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HannahLunchAdminApp.app/HannahLunchAdminApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HannahLunchAdminApp/HannahLunchAdminApp-Prefix.pch";
+				INFOPLIST_FILE = "HannahLunchAdminAppTests/HannahLunchAdminAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84CD7D0B17F4FD5900AEFE73 /* Build configuration list for PBXProject "HannahLunchAdminApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84CD7D4017F4FD5A00AEFE73 /* Debug */,
+				84CD7D4117F4FD5A00AEFE73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84CD7D4217F4FD5A00AEFE73 /* Build configuration list for PBXNativeTarget "HannahLunchAdminApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84CD7D4317F4FD5A00AEFE73 /* Debug */,
+				84CD7D4417F4FD5A00AEFE73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84CD7D4517F4FD5A00AEFE73 /* Build configuration list for PBXNativeTarget "HannahLunchAdminAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84CD7D4617F4FD5A00AEFE73 /* Debug */,
+				84CD7D4717F4FD5A00AEFE73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84CD7D0817F4FD5900AEFE73 /* Project object */;
+}

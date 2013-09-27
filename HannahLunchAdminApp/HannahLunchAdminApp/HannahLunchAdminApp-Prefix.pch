@@ -1,0 +1,26 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <SystemConfiguration/SystemConfiguration.h>
+    #import <MobileCoreServices/MobileCoreServices.h>
+#endif
+
+
+
+#define PARSE_APPLICATION_ID @"uMhRJ0N5965dSn0D56RkIHvf0pn2sNoVLtc95UTF"
+#define PARSE_CLIENT_KEY @"KLeACb4vLQVxsowNZdOy01MjDTwKJsNNY7Niw9Lv"
+#define PARSE_REST_API_KEY @"hzNEBoZWf40ThoWJNBwW6QNera9yyvbuFNKP9e9Q"
+#define PUSH_MESSAGE @"Lunch is ready!"
+#define PUSH_CHANNEL @"Lunch_Channel"
