@@ -21,14 +21,6 @@
 {
     [super viewDidLoad];
     
-//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-//        PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
-//        [testObject setObject:@"bar" forKey:@"foo"];
-//        [testObject save];
-//        
-//        NSLog(@"parse test object saved");
-//    });
-    
     
     [self _getCurrentMenu];
 }
@@ -42,8 +34,6 @@
 - (void)_getCurrentMenu
 {
     PFQuery *menuQuery = [PFQuery queryWithClassName:@"Current_Menu"];
-//    PFUser *user = [PFUser currentUser];
-//    [menuQuery whereKey:@"user" equalTo:user];
     [menuQuery orderByAscending:@"createdAt"];
     menuQuery.limit = 1;
     
