@@ -33,7 +33,7 @@
 - (void)_getCurrentMenu
 {
     PFQuery *menuQuery = [PFQuery queryWithClassName:@"Current_Menu"];
-    [menuQuery orderByAscending:@"createdAt"];
+    [menuQuery orderByDescending:@"createdAt"];
     menuQuery.limit = 1;
     
     [menuQuery findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
