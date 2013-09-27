@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		04DB0CC34FB44B5D88AED273 /* libPods-HannahLunchAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4CDEF21890F4402B440A771 /* libPods-HannahLunchAppTests.a */; };
+		1EE7D14517F4FFD200E3C986 /* UIAlertView+ShowAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7D14417F4FFD200E3C986 /* UIAlertView+ShowAlert.m */; };
 		73E4CE0AAEEE4A5A83700D2A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9700167D0728437283226067 /* libPods.a */; };
 		84CD7CD217F4F10600AEFE73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CD7CD117F4F10600AEFE73 /* Foundation.framework */; };
 		84CD7CD417F4F10600AEFE73 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CD7CD317F4F10600AEFE73 /* CoreGraphics.framework */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1EE7D14317F4FFD200E3C986 /* UIAlertView+ShowAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+ShowAlert.h"; sourceTree = "<group>"; };
+		1EE7D14417F4FFD200E3C986 /* UIAlertView+ShowAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+ShowAlert.m"; sourceTree = "<group>"; };
 		4DEBC8BAC3324BD6B5A2156C /* Pods-HannahLunchAppTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HannahLunchAppTests.xcconfig"; path = "Pods/Pods-HannahLunchAppTests.xcconfig"; sourceTree = "<group>"; };
 		84CD7CCE17F4F10600AEFE73 /* HannahLunchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HannahLunchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CD7CD117F4F10600AEFE73 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -87,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1EE7D14617F4FFD600E3C986 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				1EE7D14317F4FFD200E3C986 /* UIAlertView+ShowAlert.h */,
+				1EE7D14417F4FFD200E3C986 /* UIAlertView+ShowAlert.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 		84CD7CC517F4F10600AEFE73 = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +136,7 @@
 		84CD7CD717F4F10600AEFE73 /* HannahLunchApp */ = {
 			isa = PBXGroup;
 			children = (
+				1EE7D14617F4FFD600E3C986 /* Categories */,
 				84CD7CE017F4F10600AEFE73 /* AppDelegate.h */,
 				84CD7CE117F4F10600AEFE73 /* AppDelegate.m */,
 				84CD7D0217F4F61800AEFE73 /* ViewController.h */,
@@ -216,7 +229,7 @@
 				ORGANIZATIONNAME = uShip;
 				TargetAttributes = {
 					84CD7CCD17F4F10600AEFE73 = {
-						DevelopmentTeam = 3EQ592D694;
+						DevelopmentTeam = FUBTAK797L;
 					};
 					84CD7CE817F4F10600AEFE73 = {
 						TestTargetID = 84CD7CCD17F4F10600AEFE73;
@@ -333,6 +346,7 @@
 				84CD7D0417F4F61800AEFE73 /* ViewController.m in Sources */,
 				84CD7CE217F4F10600AEFE73 /* AppDelegate.m in Sources */,
 				84CD7CDE17F4F10600AEFE73 /* main.m in Sources */,
+				1EE7D14517F4FFD200E3C986 /* UIAlertView+ShowAlert.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,11 +468,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HannahLunchApp/HannahLunchApp-Prefix.pch";
 				INFOPLIST_FILE = "HannahLunchApp/HannahLunchApp-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -470,12 +486,14 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HannahLunchApp/HannahLunchApp-Prefix.pch";
 				INFOPLIST_FILE = "HannahLunchApp/HannahLunchApp-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
