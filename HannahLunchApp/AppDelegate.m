@@ -23,29 +23,10 @@
      UIRemoteNotificationTypeAlert |
      UIRemoteNotificationTypeSound];
     
-    //[self _setupPFUser];
-    
     return YES;
 }
 
-- (void)_setupPFUser
-{
-    PFUser *currentUser = [PFUser currentUser];
-    
-    if (!currentUser) {
-        // Dummy username and password
-        PFUser *user = [PFUser user];
-        user.username = @"Hannah";
-        user.password = @"hannahrocks";
-        user.email = @"jpepas@uship.com";
-        
-        [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-            if (error) {
-                [PFUser logInWithUsername:@"Hannah" password:@"hannahrocks"];
-            }
-        }];
-    }
-}
+
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
 {
