@@ -291,17 +291,17 @@
 }
 
 - (void)buttonTouched:(id)sender {
-    // When picture is touched, open a viewcontroller with the image
-    PFObject *theObject = (PFObject *)[allImages objectAtIndex:[sender tag]];
-    PFFile *theImage = [theObject objectForKey:@"imageFile"];
-    
-    NSData *imageData;
-    imageData = [theImage getData];
-    UIImage *selectedPhoto = [UIImage imageWithData:imageData];
-    PhotoDetailViewController *pdvc = [[PhotoDetailViewController alloc] init];
-    
-    pdvc.selectedImage = selectedPhoto;
-    [self presentViewController:pdvc animated:YES completion:nil];
+//    // When picture is touched, open a viewcontroller with the image
+//    PFObject *theObject = (PFObject *)[allImages objectAtIndex:[sender tag]];
+//    PFFile *theImage = [theObject objectForKey:@"imageFile"];
+//    
+//    NSData *imageData;
+//    imageData = [theImage getData];
+//    UIImage *selectedPhoto = [UIImage imageWithData:imageData];
+//    PhotoDetailViewController *pdvc = [[PhotoDetailViewController alloc] init];
+//    
+//    pdvc.selectedImage = selectedPhoto;
+//    [self presentViewController:pdvc animated:YES completion:nil];
 }
 
 
@@ -328,6 +328,7 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    [self refresh:nil];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
