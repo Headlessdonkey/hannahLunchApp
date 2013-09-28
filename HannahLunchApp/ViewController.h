@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FlipsideViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<FlipsideViewControllerDelegate, UIPopoverControllerDelegate>
+
+@property (strong, nonatomic) UIPopoverController *flipsidePopoverController;
 
 @end
