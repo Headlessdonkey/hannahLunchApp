@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script src="http://www.parsecdn.com/js/parse-1.2.12.min.js"></script>
+<script>
+
+$( document ).ready(function() {
+  Parse.initialize("uMhRJ0N5965dSn0D56RkIHvf0pn2sNoVLtc95UTF", "sPr0bCuF7lTzRAhcR945rDV03AYUNv8PSqAtmfz6");
+});
+
+$.fn.serializeObject = function()
+{
+    var o = {};
+    var a = this.serializeArray();
+    $.each(a, function() {
+        if (o[this.name] !== undefined) {
+            if (!o[this.name].push) {
+                o[this.name] = [o[this.name]];
+            }
+            o[this.name].push(this.value || '');
+        } else {
+            o[this.name] = this.value || '';
+        }
+    });
+    return o;
+};
+
+$(function() {
+    $('form').submit(function() {
+        var serializedForm = JSON.stringify($('form').serializeObject());
+        var MenuForm = Parse.Object.extend("MenuForm");
+        var menuFormm = new MenuForm();
+        menuFormm.set("form",serializedForm)
+        menuFormm.save(null, {
+ 			success: function(menuFormm) {
+    
+    		alert('New object created with objectId: ' + menuFormm.id);
+  		},
+  		error: function(gameScore, error) {
+    
+    		alert('Failed to create new object, with error code: ' + error.description);
+  		}
+});
+        return false;
+    });
+});       
+   
+</script>
+</head>
+<body>
+
+<font size="5">Enter current menu</font>
+
+<form action="" method="post">
+<br>
+Monday<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbspMain Dish:<input type="text" name="monday.main" size="80">
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbspSides:<input type="text" name="monday.sides" size="80">
+<br>
+<br>
+Tuesday<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbspMain Dish:<input type="text" name="tuesday.main" size="80">
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbspSides:<input type="text" name="tuesday.sides" size="80">
+<br>
+<br>
+Wednesday<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbspMain Dish:<input type="text" name="wednesday.main" size="80">
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbspSides:<input type="text" name="wednesday.sides" size="80">
+<br>
+<br>
+Thursday<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbspMain Dish:<input type="text" name="thursday.main" size="80">
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbspSides:<input type="text" name="thursday.sides" size="80">
+<br>
+<br>
+Friday<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbspMain Dish:<input type="text" name="friday.main" size="80">
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbspSides:<input type="text" name="friday.sides" size="80">
+<br>
+<br>
+<input type="submit">
+</form>
+</body>
+</html>
