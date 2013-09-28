@@ -164,13 +164,13 @@
 		84CD7CD717F4F10600AEFE73 /* HannahLunchApp */ = {
 			isa = PBXGroup;
 			children = (
-				1A6F77C817F77777004B7FE5 /* FlipsideViewController.h */,
-				1A6F77C917F77777004B7FE5 /* FlipsideViewController.m */,
 				1EE7D14617F4FFD600E3C986 /* Categories */,
 				84CD7CE017F4F10600AEFE73 /* AppDelegate.h */,
 				84CD7CE117F4F10600AEFE73 /* AppDelegate.m */,
 				84CD7D0217F4F61800AEFE73 /* ViewController.h */,
 				84CD7D0317F4F61800AEFE73 /* ViewController.m */,
+				1A6F77C817F77777004B7FE5 /* FlipsideViewController.h */,
+				1A6F77C917F77777004B7FE5 /* FlipsideViewController.m */,
 				84CD7D0517F4F63400AEFE73 /* Main_iPhone.storyboard */,
 				84CD7CE317F4F10600AEFE73 /* Images.xcassets */,
 				84CD7CD817F4F10600AEFE73 /* Supporting Files */,

@@ -17,6 +17,7 @@
 @interface FlipsideViewController : UIViewController
 
 @property (weak, nonatomic) id <FlipsideViewControllerDelegate> delegate;
+@property (nonatomic, strong) IBOutlet UITextView *menuView;
 
 - (IBAction)done:(id)sender;
 
