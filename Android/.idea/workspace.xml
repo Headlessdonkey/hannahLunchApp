@@ -42,6 +42,8 @@
     <file path="/PictureFragment.xml" changelist="28f80a64-0106-40d8-a0c1-769e17661c9a" time="1380420269392" ignored="false" />
     <file path="/FragmentAdapter.java" changelist="28f80a64-0106-40d8-a0c1-769e17661c9a" time="1380420635486" ignored="false" />
     <file path="/menuFragment.xml" changelist="28f80a64-0106-40d8-a0c1-769e17661c9a" time="1380420839839" ignored="false" />
+    <file path="$PROJECT_DIR$/gen/com/example/HannahLunchApp/R.java" changelist="28f80a64-0106-40d8-a0c1-769e17661c9a" time="1380423535256" ignored="false" />
+    <file path="/AndroidManifest.xml" changelist="28f80a64-0106-40d8-a0c1-769e17661c9a" time="1380423525790" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,13 +145,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MenuFragment.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MenuFragment.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/HannahLunchApp/MenuFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="70" selection-start="2249" selection-end="2249" vertical-scroll-proportion="-0.06029106">
+            <state line="78" column="70" selection-start="2249" selection-end="2249" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="53" selection-start="750" selection-end="750" vertical-scroll-proportion="0.34511435">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -176,7 +187,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/res/layout/main.xml" />
         <option value="$PROJECT_DIR$/res/layout/PictureFragment.xml" />
         <option value="$PROJECT_DIR$/src/com/example/HannahLunchApp/MainAcitivity.java" />
@@ -184,6 +194,7 @@
         <option value="$PROJECT_DIR$/res/layout/menuFragment.xml" />
         <option value="$PROJECT_DIR$/src/com/example/HannahLunchApp/PictureFragment.java" />
         <option value="$PROJECT_DIR$/src/com/example/HannahLunchApp/MenuFragment.java" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
       </list>
     </option>
   </component>
@@ -626,13 +637,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="65" selection-start="561" selection-end="561" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -694,10 +698,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/HannahLunchApp/MenuFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="70" selection-start="2249" selection-end="2249" vertical-scroll-proportion="-0.06029106">
+        <state line="78" column="70" selection-start="2249" selection-end="2249" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="53" selection-start="750" selection-end="750" vertical-scroll-proportion="0.34511435">
+          <folding />
         </state>
       </provider>
     </entry>
