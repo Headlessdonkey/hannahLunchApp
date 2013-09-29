@@ -6,6 +6,8 @@ import android.content.Context;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
@@ -14,13 +16,15 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.parse.*;
+import com.viewpagerindicator.CirclePageIndicator;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainAcitivity extends Activity {
+public class MainAcitivity extends FragmentActivity {
 
-    List<ParseObject> queriedObjects;
+    ViewPager viewPager;
+    CirclePageIndicator indicator;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -28,6 +32,12 @@ public class MainAcitivity extends Activity {
         setupParse();
         setContentView(R.layout.main);
         getActionBar().hide();
+        viewPager = (ViewPager) findViewById(R.id.pager);
+
+        viewPager.setAdapter(new FragmentAdapter(getSupportFragmentManager()));
+
+        indicator = (CirclePageIndicator) findViewById(R.id.indicator);
+        indicator.setViewPager(viewPager);
     }
 
     private void setupParse(){
@@ -46,56 +56,5 @@ public class MainAcitivity extends Activity {
 
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
 
-        new RemoteDataTask().execute();
-    }
-
-    private class RemoteDataTask extends AsyncTask<Void, Void, Void> {
-        // Override this method to do custom remote calls
-        protected Void doInBackground(Void... params) {
-            // Gets the current list of todos in sorted order
-            ParseQuery<ParseObject> query = new ParseQuery<ParseObject>("Current_Menu");
-            query.orderByDescending("_created_at");
-            query.setLimit(1);
-
-            try {
-                queriedObjects = query.find();
-            } catch (ParseException e) {
-                Log.d(e.toString(),"");
-            }
-            return null;
-        }
-
-        @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
-        }
-
-        @Override
-        protected void onProgressUpdate(Void... values) {
-
-            super.onProgressUpdate(values);
-        }
-
-        @Override
-        protected void onPostExecute(Void result) {
-            if(queriedObjects != null && queriedObjects.size() > 0){
-                ParseFile imageFile = (ParseFile)queriedObjects.get(0).get("imageFile");
-                imageFile.getDataInBackground(new GetDataCallback() {
-                    public void done(byte[] data, ParseException e) {
-                        if (e == null) {
-                            ((ImageView)findViewById(R.id.imageView)).setImageBitmap(BitmapFactory.decodeByteArray(data,0,data.length));
-                        } else {
-                            Log.d(e.toString(),"");
-                        }
-                    }
-                });
-            }
-            else{
-            }
-        }
-    }
 }

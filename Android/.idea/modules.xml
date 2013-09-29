@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/HannahLunchApp.iml" filepath="$PROJECT_DIR$/HannahLunchApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libs/library/library.iml" filepath="$PROJECT_DIR$/libs/library/library.iml" />
     </modules>
   </component>
 </project>
