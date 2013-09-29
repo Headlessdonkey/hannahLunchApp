@@ -19,7 +19,7 @@ import java.util.List;
 public class MenuFragment extends Fragment {
 
     List<ParseObject> queriedObjects;
-    String displayString;
+
     TextView textView;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -74,17 +74,32 @@ public class MenuFragment extends Fragment {
             if(queriedObjects != null && queriedObjects.size() > 0){
                 String jsonString = (String)queriedObjects.get(0).get("form");
                 try {
-                    JSONObject jsonObject = new JSONObject(jsonString);
-                    displayString = jsonObject.getString("monday.main");
-                    textView.setText(displayString);
+                    textView.setText(buildDisplayString(new JSONObject(jsonString)));
                 } catch (JSONException e) {
-                    e.printStackTrace();
+                    textView.setText("There was a problem getting menu");
                 }
-
             }
             else{
 
             }
+        }
+
+        private String buildDisplayString(JSONObject jsonObject) throws JSONException {
+            String displayString =
+                    stringForDayOfWeek(jsonObject,"monday") +
+                    stringForDayOfWeek(jsonObject,"tuesday") +
+                    stringForDayOfWeek(jsonObject,"wednesday") +
+                    stringForDayOfWeek(jsonObject,"thursday") +
+                    stringForDayOfWeek(jsonObject,"friday");
+            return displayString;
+        }
+
+        private String stringForDayOfWeek(JSONObject jsonObject,String dayOfWeek) throws JSONException {
+            String returnString = dayOfWeek + "\n";
+            returnString += "Main Dish: " + jsonObject.getString(dayOfWeek+".main") + "\n";
+            returnString += "Side Dishes: " + jsonObject.getString(dayOfWeek+".sides") + "\n" +"\n";
+
+            return returnString;
         }
     }
 }
