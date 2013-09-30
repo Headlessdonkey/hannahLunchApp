@@ -7,7 +7,6 @@
 //  Photo credits: Stock Exchange (http://www.sxc.hu/)
 
 #import "ViewController.h"
-#import "PhotoDetailViewController.h"
 
 #import <AFNetworking/AFNetworking.h>
 
@@ -43,7 +42,7 @@
     PFQuery *query = [PFQuery queryWithClassName:PHOTO_NAME];
     query.limit = 1;
     [query orderByDescending:@"createdAt"];
-    
+
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
             // The find succeeded.
