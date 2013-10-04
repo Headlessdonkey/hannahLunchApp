@@ -38,6 +38,11 @@
 	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>KGMakesYouStronger.ttf</string>
+		<string>Eraser.ttf</string>
+	</array>
 	<key>UIMainStoryboardFile</key>
 	<string>Main_iPhone</string>
 	<key>UIPrerenderedIcon</key>

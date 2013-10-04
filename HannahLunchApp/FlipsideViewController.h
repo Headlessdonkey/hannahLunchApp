@@ -14,10 +14,10 @@
 - (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller;
 @end
 
-@interface FlipsideViewController : UIViewController
+@interface FlipsideViewController : UIViewController<UITableViewDataSource,UITableViewDataSource>
 
 @property (weak, nonatomic) id <FlipsideViewControllerDelegate> delegate;
-@property (nonatomic, strong) IBOutlet UITextView *menuView;
+@property (nonatomic, strong) IBOutlet UITableView *menuTableView;
 
 - (IBAction)done:(id)sender;
 

@@ -9,12 +9,16 @@
 #import "FlipsideViewController.h"
 #import <Parse/Parse.h>
 #import "UIAlertView+ShowAlert.h"
+#import "UIColor+RandomColor.h"
 
 @interface FlipsideViewController ()
 
 @end
 
 @implementation FlipsideViewController
+{
+    NSMutableArray *_lunches;
+}
 
 - (void)awakeFromNib
 {
@@ -38,6 +42,10 @@
 {
     [super viewDidAppear:animated];
     [self _getCurrentMenu];
+    self.menuTableView.delegate=self;
+    self.menuTableView.dataSource=self;
+    
+    self.menuTableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"ChalkboardBackground.jpg"]];
 }
 
 - (void)_getCurrentMenu
@@ -62,7 +70,9 @@
                                       error:&parsingError];
                 NSLog(@"%@",theText);
                 
-                self.menuView.text = [self _displayStringFromDictionary:json];
+                [self _fillLunchesArray:json];
+                
+                [[self menuTableView] reloadData];
                 
             }
             else
@@ -78,36 +88,25 @@
     }];
 }
 
-- (NSString*)_displayStringFromDictionary:(NSDictionary*)dict
+- (void)_fillLunchesArray:(NSDictionary*)dict
 {
-    NSMutableString *displayString = [[NSMutableString alloc] initWithString:@""];
+    _lunches = [[NSMutableArray alloc] init];
     
-    [displayString appendString:[self _stringForDayOfTheWeek:@"monday" fromDictionary:dict]];
-    [displayString appendString:[self _stringForDayOfTheWeek:@"tuesday" fromDictionary:dict]];
-    [displayString appendString:[self _stringForDayOfTheWeek:@"wednesday" fromDictionary:dict]];
-    [displayString appendString:[self _stringForDayOfTheWeek:@"thursday" fromDictionary:dict]];
-    [displayString appendString:[self _stringForDayOfTheWeek:@"friday" fromDictionary:dict]];
-    return displayString;
+    [_lunches addObject:[self _dictionaryForDayOfTheWeek:@"monday" fromDictionary:dict]];
+    [_lunches addObject:[self _dictionaryForDayOfTheWeek:@"tuesday" fromDictionary:dict]];
+    [_lunches addObject:[self _dictionaryForDayOfTheWeek:@"wednesday" fromDictionary:dict]];
+    [_lunches addObject:[self _dictionaryForDayOfTheWeek:@"thursday" fromDictionary:dict]];
+    [_lunches addObject:[self _dictionaryForDayOfTheWeek:@"friday" fromDictionary:dict]];
 }
 
-- (NSString*)_stringForDayOfTheWeek:(NSString*)dayOfTheWeek fromDictionary:(NSDictionary*)dict
+- (NSDictionary*)_dictionaryForDayOfTheWeek:(NSString*)dayOfTheWeek fromDictionary:(NSDictionary*)dict
 {
-    NSMutableString *displayString = [[NSMutableString alloc] initWithString:@""];
-    
     NSString *mainKey = [NSString stringWithFormat:@"%@.main",dayOfTheWeek];
     NSString *sidesKey = [NSString stringWithFormat:@"%@.sides",dayOfTheWeek];
     
-    [displayString appendString:[dayOfTheWeek uppercaseString]];
-    [displayString appendString:@"\n"];
-    [displayString appendString:@"Main Dish: "];
-    [displayString appendString:[dict objectForKey:mainKey]];
-    [displayString appendString:@"\n"];
-    [displayString appendString:@"Sides: "];
-    [displayString appendString:[dict objectForKey:sidesKey]];
-    [displayString appendString:@"\n"];
-    [displayString appendString:@"\n"];
+    NSDictionary *menuForDay = [[NSDictionary alloc] initWithObjectsAndKeys:[dayOfTheWeek uppercaseString],@"dayOfTheWeek",[dict objectForKey:mainKey],@"mainDish",[dict objectForKey:sidesKey],@"sides", nil];
     
-    return displayString;
+    return menuForDay;
 }
 
 - (void)_showError:(NSString*)errorMessage
@@ -120,6 +119,70 @@
 - (IBAction)done:(id)sender
 {
     [self.delegate flipsideViewControllerDidFinish:self];
+}
+
+#pragma mrk - Table Data Source Methods
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [_lunches count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"DayOfTheWeekCell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    cell.backgroundColor = [UIColor clearColor];
+    
+    UIColor *labelColor = [UIColor randomColor];
+    UIColor *secondLabelColor = [UIColor randomColor];
+    NSString *fontName = @"Eraser";
+    
+    UILabel *dayLabel = (UILabel *)[cell viewWithTag:100];
+    [dayLabel setFont:[UIFont fontWithName:fontName size:18]];
+    [dayLabel setTextColor:labelColor];
+    
+    UILabel *mainDishLabel = (UILabel *)[cell viewWithTag:101];
+    [mainDishLabel setFont:[UIFont fontWithName:fontName size:15]];
+    [mainDishLabel setTextColor:secondLabelColor];
+    
+    UILabel *sidesLabel = (UILabel *)[cell viewWithTag:102];
+    [sidesLabel setFont:[UIFont fontWithName:fontName size:15]];
+    [sidesLabel setTextColor:secondLabelColor];
+    
+    UILabel *mainTitleLabel = (UILabel *)[cell viewWithTag:103];
+    [mainTitleLabel setFont:[UIFont fontWithName:fontName size:15]];
+    [mainTitleLabel setTextColor:labelColor];
+    
+    UILabel *sidesTitleLabel = (UILabel *)[cell viewWithTag:104];
+    [sidesTitleLabel setFont:[UIFont fontWithName:fontName size:15]];
+    [sidesTitleLabel setTextColor:labelColor];
+    
+    NSDictionary *dayDictionary = [_lunches objectAtIndex:[indexPath row]];
+    
+    NSString *dayOfTheWeek = [dayDictionary objectForKey:@"dayOfTheWeek"];
+    NSString *mainDish = [dayDictionary objectForKey:@"mainDish"];
+    NSString *sideDishes = [dayDictionary objectForKey:@"sides"];
+    
+    [dayLabel setText:dayOfTheWeek];
+    [mainDishLabel setText:mainDish];
+    [sidesLabel setText:sideDishes];
+    
+    return cell;
+}
+
+#pragma mark - Table delegate methods
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
 }
 
 @end
