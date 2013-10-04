@@ -45,7 +45,7 @@
     self.menuTableView.delegate=self;
     self.menuTableView.dataSource=self;
     
-    self.menuTableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"ChalkboardBackground.jpg"]];
+    self.menuTableView.backgroundColor = [UIColor clearColor];
 }
 
 - (void)_getCurrentMenu
