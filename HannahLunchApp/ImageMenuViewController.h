@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ImageMenuViewController.h
 //  ParseTest
 //
 //  Created by Matt Hayes on 7/16/13.
@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "FlipsideViewController.h"
+#import "TextMenuViewController.h"
 
-@interface ViewController : UIViewController<FlipsideViewControllerDelegate, UIPopoverControllerDelegate>
+@interface ImageMenuViewController : UIViewController<FlipsideViewControllerDelegate, UIPopoverControllerDelegate>
 
 @property (strong, nonatomic) UIPopoverController *flipsidePopoverController;
 

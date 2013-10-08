@@ -1,21 +1,21 @@
 //
-//  FlipsideViewController.m
+//  TextMenuViewController.m
 //  Test_util
 //
 //  Created by James Logan on 9/28/13.
 //  Copyright (c) 2013 James Logan. All rights reserved.
 //
 
-#import "FlipsideViewController.h"
+#import "TextMenuViewController.h"
 #import <Parse/Parse.h>
 #import "UIAlertView+ShowAlert.h"
 #import "UIColor+RandomColor.h"
 
-@interface FlipsideViewController ()
+@interface TextMenuViewController ()
 
 @end
 
-@implementation FlipsideViewController
+@implementation TextMenuViewController
 {
     NSMutableArray *_lunches;
 }

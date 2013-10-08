@@ -1,21 +1,21 @@
 //
-//  ViewController.m
+//  ImageMenuViewController.m
 //  ParseTest
 //
 //  Created by Matt Hayes on 7/16/13.
 //  Copyright (c) 2013 Matt Hayes. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "ImageMenuViewController.h"
 #import <Parse/Parse.h>
 #import <dispatch/dispatch.h>
 #import "UIAlertView+ShowAlert.h"
 
-@interface ViewController ()
+@interface ImageMenuViewController ()
 @property (nonatomic, strong) IBOutlet UIImageView *imageView;
 @end
 
-@implementation ViewController
+@implementation ImageMenuViewController
 
 - (void)viewDidLoad
 {
@@ -70,7 +70,7 @@
 
 #pragma mark - Flipside View Controller
 
-- (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller
+- (void)flipsideViewControllerDidFinish:(TextMenuViewController *)controller
 {
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
         [self dismissViewControllerAnimated:YES completion:nil];

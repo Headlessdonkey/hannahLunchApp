@@ -12,7 +12,7 @@
 		1A66324817FEF0D300BCDBCB /* KGMakesYouStronger.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A66324717FEEFFB00BCDBCB /* KGMakesYouStronger.ttf */; };
 		1A66324B17FEF18800BCDBCB /* UIColor+RandomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A66324A17FEF18800BCDBCB /* UIColor+RandomColor.m */; };
 		1A66324E17FEF65F00BCDBCB /* Eraser.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A66324D17FEF65F00BCDBCB /* Eraser.ttf */; };
-		1A6F77CA17F77777004B7FE5 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6F77C917F77777004B7FE5 /* FlipsideViewController.m */; };
+		1A6F77CA17F77777004B7FE5 /* TextMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6F77C917F77777004B7FE5 /* TextMenuViewController.m */; };
 		1EE7D14517F4FFD200E3C986 /* UIAlertView+ShowAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7D14417F4FFD200E3C986 /* UIAlertView+ShowAlert.m */; };
 		5B9F199817F51B4300F65494 /* icon_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B9F199517F51B4300F65494 /* icon_57.png */; };
 		5B9F199917F51B4300F65494 /* icon_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B9F199617F51B4300F65494 /* icon_114.png */; };
@@ -33,7 +33,7 @@
 		84CD7CED17F4F10600AEFE73 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CD7CD517F4F10600AEFE73 /* UIKit.framework */; };
 		84CD7CF517F4F10600AEFE73 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84CD7CF317F4F10600AEFE73 /* InfoPlist.strings */; };
 		84CD7CF717F4F10600AEFE73 /* HannahLunchAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD7CF617F4F10600AEFE73 /* HannahLunchAppTests.m */; };
-		84CD7D0417F4F61800AEFE73 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD7D0317F4F61800AEFE73 /* ViewController.m */; };
+		84CD7D0417F4F61800AEFE73 /* ImageMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD7D0317F4F61800AEFE73 /* ImageMenuViewController.m */; };
 		84CD7D0617F4F63400AEFE73 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CD7D0517F4F63400AEFE73 /* Main_iPhone.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -54,8 +54,8 @@
 		1A66324A17FEF18800BCDBCB /* UIColor+RandomColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RandomColor.m"; sourceTree = "<group>"; };
 		1A66324C17FEF4CD00BCDBCB /* MathMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MathMacros.h; sourceTree = "<group>"; };
 		1A66324D17FEF65F00BCDBCB /* Eraser.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Eraser.ttf; sourceTree = "<group>"; };
-		1A6F77C817F77777004B7FE5 /* FlipsideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlipsideViewController.h; sourceTree = "<group>"; };
-		1A6F77C917F77777004B7FE5 /* FlipsideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; };
+		1A6F77C817F77777004B7FE5 /* TextMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextMenuViewController.h; sourceTree = "<group>"; };
+		1A6F77C917F77777004B7FE5 /* TextMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextMenuViewController.m; sourceTree = "<group>"; };
 		1EE7D14317F4FFD200E3C986 /* UIAlertView+ShowAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+ShowAlert.h"; sourceTree = "<group>"; };
 		1EE7D14417F4FFD200E3C986 /* UIAlertView+ShowAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+ShowAlert.m"; sourceTree = "<group>"; };
 		4DEBC8BAC3324BD6B5A2156C /* Pods-HannahLunchAppTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HannahLunchAppTests.xcconfig"; path = "Pods/Pods-HannahLunchAppTests.xcconfig"; sourceTree = "<group>"; };
@@ -81,8 +81,8 @@
 		84CD7CF217F4F10600AEFE73 /* HannahLunchAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HannahLunchAppTests-Info.plist"; sourceTree = "<group>"; };
 		84CD7CF417F4F10600AEFE73 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		84CD7CF617F4F10600AEFE73 /* HannahLunchAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HannahLunchAppTests.m; sourceTree = "<group>"; };
-		84CD7D0217F4F61800AEFE73 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		84CD7D0317F4F61800AEFE73 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		84CD7D0217F4F61800AEFE73 /* ImageMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageMenuViewController.h; sourceTree = "<group>"; };
+		84CD7D0317F4F61800AEFE73 /* ImageMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageMenuViewController.m; sourceTree = "<group>"; };
 		84CD7D0517F4F63400AEFE73 /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
 		90146974327B4E929584EAAB /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		9700167D0728437283226067 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -180,10 +180,10 @@
 				1EE7D14617F4FFD600E3C986 /* Categories */,
 				84CD7CE017F4F10600AEFE73 /* AppDelegate.h */,
 				84CD7CE117F4F10600AEFE73 /* AppDelegate.m */,
-				84CD7D0217F4F61800AEFE73 /* ViewController.h */,
-				84CD7D0317F4F61800AEFE73 /* ViewController.m */,
-				1A6F77C817F77777004B7FE5 /* FlipsideViewController.h */,
-				1A6F77C917F77777004B7FE5 /* FlipsideViewController.m */,
+				84CD7D0217F4F61800AEFE73 /* ImageMenuViewController.h */,
+				84CD7D0317F4F61800AEFE73 /* ImageMenuViewController.m */,
+				1A6F77C817F77777004B7FE5 /* TextMenuViewController.h */,
+				1A6F77C917F77777004B7FE5 /* TextMenuViewController.m */,
 				84CD7D0517F4F63400AEFE73 /* Main_iPhone.storyboard */,
 				84CD7CE317F4F10600AEFE73 /* Images.xcassets */,
 				84CD7CD817F4F10600AEFE73 /* Supporting Files */,
@@ -399,10 +399,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84CD7D0417F4F61800AEFE73 /* ViewController.m in Sources */,
+				84CD7D0417F4F61800AEFE73 /* ImageMenuViewController.m in Sources */,
 				84CD7CE217F4F10600AEFE73 /* AppDelegate.m in Sources */,
 				84CD7CDE17F4F10600AEFE73 /* main.m in Sources */,
-				1A6F77CA17F77777004B7FE5 /* FlipsideViewController.m in Sources */,
+				1A6F77CA17F77777004B7FE5 /* TextMenuViewController.m in Sources */,
 				1A66324B17FEF18800BCDBCB /* UIColor+RandomColor.m in Sources */,
 				1EE7D14517F4FFD200E3C986 /* UIAlertView+ShowAlert.m in Sources */,
 			);
