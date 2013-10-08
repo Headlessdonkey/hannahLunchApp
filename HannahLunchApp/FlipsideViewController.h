@@ -14,7 +14,7 @@
 - (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller;
 @end
 
-@interface FlipsideViewController : UIViewController<UITableViewDataSource,UITableViewDataSource>
+@interface FlipsideViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 
 @property (weak, nonatomic) id <FlipsideViewControllerDelegate> delegate;
 @property (nonatomic, strong) IBOutlet UITableView *menuTableView;
