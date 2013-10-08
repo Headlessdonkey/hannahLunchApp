@@ -17,11 +17,15 @@
                   clientKey:@"KLeACb4vLQVxsowNZdOy01MjDTwKJsNNY7Niw9Lv"];
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
+#if TARGET_IPHONE_SIMULATOR
+    NSLog(@"Not registering for push notifications.  We're running in the simulator!");
+#else
     // Register for push notifications
     [application registerForRemoteNotificationTypes:
      UIRemoteNotificationTypeBadge |
      UIRemoteNotificationTypeAlert |
      UIRemoteNotificationTypeSound];
+#endif
     
     return YES;
 }
