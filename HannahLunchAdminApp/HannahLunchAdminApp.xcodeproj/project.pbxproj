@@ -15,6 +15,8 @@
 		844F06FE17F52C5E00BD1AC8 /* icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 844F06FA17F52C5E00BD1AC8 /* icon-40@2x.png */; };
 		844F06FF17F52C5E00BD1AC8 /* icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 844F06FB17F52C5E00BD1AC8 /* icon-60@2x.png */; };
 		844F070017F52C5E00BD1AC8 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 844F06FC17F52C5E00BD1AC8 /* iTunesArtwork */; };
+		84673E8117FF516A006BE2E6 /* icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 84673E8017FF516A006BE2E6 /* icon-29.png */; };
+		84855AA017FF6822000AEEF2 /* MenuInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84855A9F17FF6822000AEEF2 /* MenuInputViewController.m */; };
 		84CD7D1417F4FD5900AEFE73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CD7D1317F4FD5900AEFE73 /* Foundation.framework */; };
 		84CD7D1617F4FD5900AEFE73 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CD7D1517F4FD5900AEFE73 /* CoreGraphics.framework */; };
 		84CD7D1817F4FD5900AEFE73 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CD7D1717F4FD5900AEFE73 /* UIKit.framework */; };
@@ -56,6 +58,9 @@
 		844F06FA17F52C5E00BD1AC8 /* icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40@2x.png"; sourceTree = "<group>"; };
 		844F06FB17F52C5E00BD1AC8 /* icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-60@2x.png"; sourceTree = "<group>"; };
 		844F06FC17F52C5E00BD1AC8 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		84673E8017FF516A006BE2E6 /* icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-29.png"; sourceTree = "<group>"; };
+		84855A9E17FF6822000AEEF2 /* MenuInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuInputViewController.h; sourceTree = "<group>"; };
+		84855A9F17FF6822000AEEF2 /* MenuInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuInputViewController.m; sourceTree = "<group>"; };
 		84C7D5A9550E4A4BA90943A4 /* Pods-HannahLunchAdminAppTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HannahLunchAdminAppTests.xcconfig"; path = "Pods/Pods-HannahLunchAdminAppTests.xcconfig"; sourceTree = "<group>"; };
 		84CD7D1017F4FD5900AEFE73 /* HannahLunchAdminApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HannahLunchAdminApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CD7D1317F4FD5900AEFE73 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -150,6 +155,8 @@
 				84CD7D2317F4FD5900AEFE73 /* AppDelegate.m */,
 				844F06D517F511B600BD1AC8 /* ViewController.h */,
 				844F06D617F511B600BD1AC8 /* ViewController.m */,
+				84855A9E17FF6822000AEEF2 /* MenuInputViewController.h */,
+				84855A9F17FF6822000AEEF2 /* MenuInputViewController.m */,
 				844F06E217F5153D00BD1AC8 /* Main.storyboard */,
 				84CD7D2B17F4FD5900AEFE73 /* Images.xcassets */,
 				84CD7D1A17F4FD5900AEFE73 /* Supporting Files */,
@@ -160,6 +167,7 @@
 		84CD7D1A17F4FD5900AEFE73 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				84673E8017FF516A006BE2E6 /* icon-29.png */,
 				AAE4CE9617F8F8C000D7B08D /* icon-57.png */,
 				AAE4CE9717F8F8C000D7B08D /* icon-57@2x.png */,
 				844F06F917F52C5E00BD1AC8 /* icon-29@2x.png */,
@@ -283,6 +291,7 @@
 				844F06FD17F52C5E00BD1AC8 /* icon-29@2x.png in Resources */,
 				AAE4CE9917F8F8C000D7B08D /* icon-57@2x.png in Resources */,
 				84CD7D5717F50F7900AEFE73 /* 37x-Checkmark.png in Resources */,
+				84673E8117FF516A006BE2E6 /* icon-29.png in Resources */,
 				844F070017F52C5E00BD1AC8 /* iTunesArtwork in Resources */,
 				844F06FE17F52C5E00BD1AC8 /* icon-40@2x.png in Resources */,
 				AAE4CE9817F8F8C000D7B08D /* icon-57.png in Resources */,
@@ -367,6 +376,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84855AA017FF6822000AEEF2 /* MenuInputViewController.m in Sources */,
 				84CD7D2417F4FD5900AEFE73 /* AppDelegate.m in Sources */,
 				844F06E117F513FA00BD1AC8 /* ViewController.m in Sources */,
 				84CD7D2017F4FD5900AEFE73 /* main.m in Sources */,

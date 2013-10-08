@@ -25,6 +25,5 @@
 - (IBAction)cameraButtonTapped:(id)sender;
 - (void)uploadImage:(NSData *)imageData;
 - (void)setUpImages:(NSArray *)images;
-- (void)buttonTouched:(id)sender;
 
 @end
