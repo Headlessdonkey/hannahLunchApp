@@ -21,6 +21,4 @@
 
 + (NSString*)reuseIdentifier;
 
-- (id)init;
-
 @end

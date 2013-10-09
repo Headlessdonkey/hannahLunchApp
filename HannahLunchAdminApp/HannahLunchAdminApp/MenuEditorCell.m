@@ -11,15 +11,23 @@
 @implementation MenuEditorCell
 
 
-- (id)init
+- (void)awakeFromNib
 {
-    self = [super initWithStyle:UITableViewCellStyleDefault
-                reuseIdentifier:[[self class] reuseIdentifier]];
-    if (self == nil)
-    {
-        return nil;
-    }
-    return self;
+    UIGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self
+                                                                              action:@selector(_cellWasTapped:)];
+    [self addGestureRecognizer:recognizer];
+}
+
+
+- (void)_cellWasTapped:(id)sender
+{
+    [self _hideKeyboardWhenUserTapsOutsideOfATextField];
+}
+
+
+- (void)_hideKeyboardWhenUserTapsOutsideOfATextField
+{
+    [self endEditing:YES];
 }
 
 
