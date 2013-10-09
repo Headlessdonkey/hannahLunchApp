@@ -16,14 +16,6 @@
 
 @implementation MenuInputViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
 
 - (void)viewDidLoad
 {
@@ -61,17 +53,17 @@
                 
                 [self _fillLunchesArray:json];
                 
-                [[self menuTableView] reloadData];
+//                [[self menuTableView] reloadData];
                 
             }
             else
             {
-                [self _showError:@"Collection of images was empty"];
+//                [self _showError:@"Collection of images was empty"];
             }
         }
         else
         {
-            [self _showError:error.localizedDescription];
+//            [self _showError:error.localizedDescription];
         }
         
     }];
@@ -79,13 +71,13 @@
 
 - (void)_fillLunchesArray:(NSDictionary*)dict
 {
-    _lunches = [[NSMutableArray alloc] init];
-    
-    [_lunches addObject:[self _dictionaryForDayOfTheWeek:@"monday" fromDictionary:dict]];
-    [_lunches addObject:[self _dictionaryForDayOfTheWeek:@"tuesday" fromDictionary:dict]];
-    [_lunches addObject:[self _dictionaryForDayOfTheWeek:@"wednesday" fromDictionary:dict]];
-    [_lunches addObject:[self _dictionaryForDayOfTheWeek:@"thursday" fromDictionary:dict]];
-    [_lunches addObject:[self _dictionaryForDayOfTheWeek:@"friday" fromDictionary:dict]];
+//    _lunches = [[NSMutableArray alloc] init];
+//    
+//    [_lunches addObject:[self _dictionaryForDayOfTheWeek:@"monday" fromDictionary:dict]];
+//    [_lunches addObject:[self _dictionaryForDayOfTheWeek:@"tuesday" fromDictionary:dict]];
+//    [_lunches addObject:[self _dictionaryForDayOfTheWeek:@"wednesday" fromDictionary:dict]];
+//    [_lunches addObject:[self _dictionaryForDayOfTheWeek:@"thursday" fromDictionary:dict]];
+//    [_lunches addObject:[self _dictionaryForDayOfTheWeek:@"friday" fromDictionary:dict]];
 }
 
 @end
