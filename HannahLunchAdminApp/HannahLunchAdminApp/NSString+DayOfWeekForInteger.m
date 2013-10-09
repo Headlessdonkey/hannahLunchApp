@@ -17,31 +17,31 @@
     NSString *dayOfWeek = nil;
     switch (anInteger) {
         case 0:
-            dayOfWeek = @"Monday";
+            dayOfWeek = @"monday";
             break;
             
         case 1:
-            dayOfWeek = @"Tuesday";
+            dayOfWeek = @"tuesday";
             break;
             
         case 2:
-            dayOfWeek = @"Wednesday";
+            dayOfWeek = @"wednesday";
             break;
             
         case 3:
-            dayOfWeek = @"Thursday";
+            dayOfWeek = @"thursday";
             break;
             
         case 4:
-            dayOfWeek = @"Friday";
+            dayOfWeek = @"friday";
             break;
             
         case 5:
-            dayOfWeek = @"Saturday";
+            dayOfWeek = @"saturday";
             break;
             
         case 6:
-            dayOfWeek = @"Sunday";
+            dayOfWeek = @"sunday";
             break;
             
         default:

@@ -77,7 +77,7 @@
             }
             else
             {
-                [self _showError:@"Collection of images was empty"];
+                [self _showError:@"something sent wrong"];
             }
         }
         else

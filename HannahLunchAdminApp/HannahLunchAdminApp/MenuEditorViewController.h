@@ -10,4 +10,7 @@
 
 @interface MenuEditorViewController : UITableViewController
 
+- (IBAction)commitButtonPressed:(id)sender;
+- (IBAction)pullCurrentMenu:(id)sender;
+
 @end

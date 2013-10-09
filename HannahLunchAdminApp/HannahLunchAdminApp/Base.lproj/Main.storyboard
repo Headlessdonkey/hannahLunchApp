@@ -132,7 +132,25 @@
                             <outlet property="delegate" destination="wzB-3I-DV2" id="KlZ-cp-c5V"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="1yc-B5-YRY"/>
+                    <navigationItem key="navigationItem" id="1yc-B5-YRY">
+                        <nil key="title"/>
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jxn-SI-krz">
+                            <rect key="frame" x="96" y="6" width="128" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="Commit">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="commitButtonPressed:" destination="wzB-3I-DV2" eventType="touchUpInside" id="Gkj-gB-bms"/>
+                            </connections>
+                        </button>
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="ap5-cm-VZH">
+                            <connections>
+                                <action selector="pullCurrentMenu:" destination="wzB-3I-DV2" id="0nL-Gz-c6h"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="90O-6D-otY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

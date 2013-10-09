@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1E6BD8731804E2E30025B27B /* ChalkboardBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1E6BD8721804E2E30025B27B /* ChalkboardBackground.jpg */; };
+		1E6BD8761804F3220025B27B /* UIAlertView+ShowAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6BD8751804F3220025B27B /* UIAlertView+ShowAlert.m */; };
 		5BF735E61804D6F8003E8D6D /* MenuEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF735E51804D6F8003E8D6D /* MenuEditorViewController.m */; };
 		5BF735E91804D847003E8D6D /* MenuEditorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF735E81804D847003E8D6D /* MenuEditorCell.m */; };
 		5BF735ED1804E05D003E8D6D /* NSString+DayOfWeekForInteger.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF735EC1804E05D003E8D6D /* NSString+DayOfWeekForInteger.m */; };
@@ -52,6 +53,8 @@
 
 /* Begin PBXFileReference section */
 		1E6BD8721804E2E30025B27B /* ChalkboardBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ChalkboardBackground.jpg; sourceTree = "<group>"; };
+		1E6BD8741804F3220025B27B /* UIAlertView+ShowAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+ShowAlert.h"; sourceTree = "<group>"; };
+		1E6BD8751804F3220025B27B /* UIAlertView+ShowAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+ShowAlert.m"; sourceTree = "<group>"; };
 		2A22928C310E4E92AB4C3BCE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF735E41804D6F8003E8D6D /* MenuEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuEditorViewController.h; sourceTree = "<group>"; };
 		5BF735E51804D6F8003E8D6D /* MenuEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuEditorViewController.m; sourceTree = "<group>"; };
@@ -175,6 +178,8 @@
 		84CD7D1917F4FD5900AEFE73 /* HannahLunchAdminApp */ = {
 			isa = PBXGroup;
 			children = (
+				1E6BD8741804F3220025B27B /* UIAlertView+ShowAlert.h */,
+				1E6BD8751804F3220025B27B /* UIAlertView+ShowAlert.m */,
 				84CD7D2217F4FD5900AEFE73 /* AppDelegate.h */,
 				84CD7D2317F4FD5900AEFE73 /* AppDelegate.m */,
 				844F06D517F511B600BD1AC8 /* ViewController.h */,
@@ -410,6 +415,7 @@
 				84CD7D2017F4FD5900AEFE73 /* main.m in Sources */,
 				5BF735E61804D6F8003E8D6D /* MenuEditorViewController.m in Sources */,
 				5BF735ED1804E05D003E8D6D /* NSString+DayOfWeekForInteger.m in Sources */,
+				1E6BD8761804F3220025B27B /* UIAlertView+ShowAlert.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
