@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5BF735E61804D6F8003E8D6D /* MenuEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF735E51804D6F8003E8D6D /* MenuEditorViewController.m */; };
+		5BF735E91804D847003E8D6D /* MenuEditorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF735E81804D847003E8D6D /* MenuEditorCell.m */; };
 		844F06E117F513FA00BD1AC8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844F06D617F511B600BD1AC8 /* ViewController.m */; };
 		844F06E417F5153D00BD1AC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844F06E217F5153D00BD1AC8 /* Main.storyboard */; };
 		844F06E817F5209900BD1AC8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844F06E717F5209900BD1AC8 /* SystemConfiguration.framework */; };
@@ -51,6 +52,8 @@
 		2A22928C310E4E92AB4C3BCE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF735E41804D6F8003E8D6D /* MenuEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuEditorViewController.h; sourceTree = "<group>"; };
 		5BF735E51804D6F8003E8D6D /* MenuEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuEditorViewController.m; sourceTree = "<group>"; };
+		5BF735E71804D847003E8D6D /* MenuEditorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuEditorCell.h; sourceTree = "<group>"; };
+		5BF735E81804D847003E8D6D /* MenuEditorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuEditorCell.m; sourceTree = "<group>"; };
 		71CD3B02B0154D3B886000B6 /* libPods-HannahLunchAdminAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HannahLunchAdminAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		844F06D517F511B600BD1AC8 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		844F06D617F511B600BD1AC8 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -115,6 +118,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5BF735EA1804D87F003E8D6D /* Menu Editor 2 */ = {
+			isa = PBXGroup;
+			children = (
+				5BF735E41804D6F8003E8D6D /* MenuEditorViewController.h */,
+				5BF735E51804D6F8003E8D6D /* MenuEditorViewController.m */,
+				5BF735E71804D847003E8D6D /* MenuEditorCell.h */,
+				5BF735E81804D847003E8D6D /* MenuEditorCell.m */,
+			);
+			name = "Menu Editor 2";
+			sourceTree = "<group>";
+		};
 		84CD7D0717F4FD5900AEFE73 = {
 			isa = PBXGroup;
 			children = (
@@ -161,8 +175,7 @@
 				84855A9E17FF6822000AEEF2 /* MenuInputViewController.h */,
 				84855A9F17FF6822000AEEF2 /* MenuInputViewController.m */,
 				844F06E217F5153D00BD1AC8 /* Main.storyboard */,
-				5BF735E41804D6F8003E8D6D /* MenuEditorViewController.h */,
-				5BF735E51804D6F8003E8D6D /* MenuEditorViewController.m */,
+				5BF735EA1804D87F003E8D6D /* Menu Editor 2 */,
 				84CD7D2B17F4FD5900AEFE73 /* Images.xcassets */,
 				84CD7D1A17F4FD5900AEFE73 /* Supporting Files */,
 			);
@@ -384,6 +397,7 @@
 				84855AA017FF6822000AEEF2 /* MenuInputViewController.m in Sources */,
 				84CD7D2417F4FD5900AEFE73 /* AppDelegate.m in Sources */,
 				844F06E117F513FA00BD1AC8 /* ViewController.m in Sources */,
+				5BF735E91804D847003E8D6D /* MenuEditorCell.m in Sources */,
 				84CD7D2017F4FD5900AEFE73 /* main.m in Sources */,
 				5BF735E61804D6F8003E8D6D /* MenuEditorViewController.m in Sources */,
 			);
