@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>7B1ACC1A-CC64-4DAC-A68A-61FA2D68ABDB</string>
+	<string>BC23D319-4498-4E46-B578-947B1B560E44</string>
 	<key>IDESourceControlProjectName</key>
 	<string>HannahLunchAdminApp</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>7477F532-E93A-452D-A75B-B7464ABA3DBC</key>
-		<string>https://github.com/Headlessdonkey/hannahLunchApp</string>
+		<key>16DFF3A5-5777-42B5-8721-A6D538EFC819</key>
+		<string>https://github.com/Headlessdonkey/hannahLunchApp.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>HannahLunchAdminApp/HannahLunchAdminApp.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>7477F532-E93A-452D-A75B-B7464ABA3DBC</key>
+		<key>16DFF3A5-5777-42B5-8721-A6D538EFC819</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/Headlessdonkey/hannahLunchApp</string>
+	<string>https://github.com/Headlessdonkey/hannahLunchApp.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>7477F532-E93A-452D-A75B-B7464ABA3DBC</string>
+	<string>16DFF3A5-5777-42B5-8721-A6D538EFC819</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>7477F532-E93A-452D-A75B-B7464ABA3DBC</string>
+			<string>16DFF3A5-5777-42B5-8721-A6D538EFC819</string>
 			<key>IDESourceControlWCCName</key>
-			<string>HannahLunchApp</string>
+			<string>hannahLunchApp</string>
 		</dict>
 	</array>
 </dict>
