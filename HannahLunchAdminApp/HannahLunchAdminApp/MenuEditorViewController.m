@@ -8,6 +8,7 @@
 
 #import "MenuEditorViewController.h"
 #import "MenuEditorCell.h"
+#import "NSString+DayOfWeekForInteger.h"
 
 
 @interface MenuEditorViewController ()
@@ -34,6 +35,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.tableView.allowsSelection = NO;
 }
 
 
@@ -54,7 +56,7 @@
         cell = [[MenuEditorCell alloc] init];
     }
 
-    cell.dayOfWeekLabel.text = [NSString stringWithFormat:@"%d", indexPath.row];
+    cell.dayOfWeekLabel.text = [NSString dayOfWeekForInteger:indexPath.row];
 
     return cell;
 }
