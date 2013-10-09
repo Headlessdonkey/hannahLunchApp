@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface MenuEditorCell : UITableViewCell
+
+@property (strong, nonatomic) IBOutlet UILabel *dayOfWeekLabel;
+
+@property (strong, nonatomic) IBOutlet UILabel *mainDishLabel;
+@property (strong, nonatomic) IBOutlet UITextField *mainDishTextField;
+
+@property (strong, nonatomic) IBOutlet UILabel *sideDishesLabel;
+@property (strong, nonatomic) IBOutlet UITextField *sideDishesTextField;
 
 @end
