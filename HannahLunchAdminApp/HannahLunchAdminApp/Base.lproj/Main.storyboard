@@ -17,15 +17,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hLJ-tu-a0W">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                            </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Bd-3r-8vJ">
-                                <rect key="frame" x="0.0" y="462" width="320" height="105"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ChalkboardBackground.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="a9s-qb-iIW">
+                                <rect key="frame" x="-6" y="0.0" width="331" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Bd-3r-8vJ">
+                                <rect key="frame" x="65" y="257" width="182" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.95382309181359348" blue="0.12490821952689785" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="182" id="BWB-Ar-Uea"/>
+                                    <constraint firstAttribute="height" constant="105" id="el5-9V-BPV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="Lunch is Ready">
+                                    <color key="titleColor" red="0.018797614309232102" green="0.17925201432971594" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -35,14 +41,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="7Bd-3r-8vJ" firstAttribute="trailing" secondItem="hLJ-tu-a0W" secondAttribute="trailing" id="7ee-HM-VSy"/>
-                            <constraint firstAttribute="bottom" secondItem="hLJ-tu-a0W" secondAttribute="bottom" constant="108" id="E5G-kK-AHi"/>
-                            <constraint firstItem="hLJ-tu-a0W" firstAttribute="leading" secondItem="OvU-7m-dLU" secondAttribute="leading" id="OGC-ff-msa"/>
-                            <constraint firstItem="7Bd-3r-8vJ" firstAttribute="top" secondItem="hLJ-tu-a0W" secondAttribute="bottom" constant="2" id="efH-Ek-4a9"/>
-                            <constraint firstItem="hLJ-tu-a0W" firstAttribute="top" secondItem="OvU-7m-dLU" secondAttribute="top" id="m4O-AQ-bUr"/>
-                            <constraint firstItem="Akz-vg-QNt" firstAttribute="top" secondItem="7Bd-3r-8vJ" secondAttribute="bottom" constant="1" id="mmR-nQ-Vsb"/>
-                            <constraint firstItem="7Bd-3r-8vJ" firstAttribute="leading" secondItem="hLJ-tu-a0W" secondAttribute="leading" id="u6r-Y1-QUo"/>
-                            <constraint firstAttribute="trailing" secondItem="hLJ-tu-a0W" secondAttribute="trailing" id="uhX-M0-pS5"/>
+                            <constraint firstItem="Akz-vg-QNt" firstAttribute="top" secondItem="7Bd-3r-8vJ" secondAttribute="bottom" constant="206" id="0qV-4Q-B3u"/>
+                            <constraint firstAttribute="trailing" secondItem="7Bd-3r-8vJ" secondAttribute="trailing" constant="73" id="Jl9-sU-olT"/>
+                            <constraint firstItem="7Bd-3r-8vJ" firstAttribute="leading" secondItem="OvU-7m-dLU" secondAttribute="leading" constant="65" id="aOU-nu-sUJ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="IFh-MM-yBm">
@@ -62,7 +63,6 @@
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="lunchButton" destination="7Bd-3r-8vJ" id="S4T-oJ-8Sb"/>
-                        <outlet property="photoScrollView" destination="hLJ-tu-a0W" id="Gjr-ZD-mRu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dof-0j-OWz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -186,6 +186,9 @@
             <point key="canvasLocation" x="520" y="61"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ChalkboardBackground.jpg" width="1280" height="1600"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
