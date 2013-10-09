@@ -24,12 +24,6 @@
     [self _getCurrentMenu];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 - (void)_getCurrentMenu
 {
     PFQuery *menuQuery = [PFQuery queryWithClassName:@"Current_Menu"];

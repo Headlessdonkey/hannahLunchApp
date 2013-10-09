@@ -10,6 +10,7 @@
 #import <Parse/Parse.h>
 #import "UIAlertView+ShowAlert.h"
 #import "UIColor+RandomColor.h"
+#import "NSDate+WeekdayName.h"
 
 @interface TextMenuViewController ()
 
@@ -59,7 +60,6 @@
         {
             if([objects count] > 0)
             {
-                NSLog(@"Successfully retrieved %d photos.", objects.count);
                 PFObject *formAsObject = [objects objectAtIndex:0];
                 
                 NSError* parsingError = nil;
@@ -104,7 +104,11 @@
     NSString *mainKey = [NSString stringWithFormat:@"%@.main",dayOfTheWeek];
     NSString *sidesKey = [NSString stringWithFormat:@"%@.sides",dayOfTheWeek];
     
-    NSDictionary *menuForDay = [[NSDictionary alloc] initWithObjectsAndKeys:[dayOfTheWeek uppercaseString],@"dayOfTheWeek",[dict objectForKey:mainKey],@"mainDish",[dict objectForKey:sidesKey],@"sides", nil];
+    NSDictionary *menuForDay = @{@"dayOfTheWeek": [dayOfTheWeek uppercaseString],
+                                 @"mainDish": [dict objectForKey:mainKey],
+                                 @"sides": [dict objectForKey:sidesKey]};
+    
+    return [[NSDictionary alloc] initWithDictionary:menuForDay];
     
     return menuForDay;
 }
@@ -141,8 +145,28 @@
     
     cell.backgroundColor = [UIColor clearColor];
     
-    UIColor *labelColor = [UIColor randomColor];
-    UIColor *secondLabelColor = [UIColor randomColor];
+    NSDictionary *dayDictionary = [_lunches objectAtIndex:[indexPath row]];
+    
+    NSString *dayOfTheWeek = [dayDictionary objectForKey:@"dayOfTheWeek"];
+    NSString *mainDish = [dayDictionary objectForKey:@"mainDish"];
+    NSString *sideDishes = [dayDictionary objectForKey:@"sides"];
+
+    NSString *todayDayOfTheWeek = [[NSDate date] weekdayName];
+    BOOL isTodaysCell = [[dayOfTheWeek uppercaseString] isEqualToString:[todayDayOfTheWeek uppercaseString]];
+    
+    UIColor *labelColor;
+    UIColor *secondLabelColor;
+    if (isTodaysCell)
+    {
+        labelColor = [UIColor randomColor];
+        secondLabelColor = [UIColor randomColor];
+    }
+    else
+    {
+        labelColor = [UIColor whiteColor];
+        secondLabelColor = [UIColor whiteColor];
+    }
+    
     NSString *fontName = @"Eraser";
     
     UILabel *dayLabel = (UILabel *)[cell viewWithTag:100];
@@ -164,12 +188,6 @@
     UILabel *sidesTitleLabel = (UILabel *)[cell viewWithTag:104];
     [sidesTitleLabel setFont:[UIFont fontWithName:fontName size:15]];
     [sidesTitleLabel setTextColor:labelColor];
-    
-    NSDictionary *dayDictionary = [_lunches objectAtIndex:[indexPath row]];
-    
-    NSString *dayOfTheWeek = [dayDictionary objectForKey:@"dayOfTheWeek"];
-    NSString *mainDish = [dayDictionary objectForKey:@"mainDish"];
-    NSString *sideDishes = [dayDictionary objectForKey:@"sides"];
     
     [dayLabel setText:dayOfTheWeek];
     [mainDishLabel setText:mainDish];

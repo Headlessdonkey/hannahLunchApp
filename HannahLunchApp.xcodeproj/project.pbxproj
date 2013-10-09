@@ -21,6 +21,7 @@
 		5B9F19DA17F524C600F65494 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B9F19D717F524C600F65494 /* Default.png */; };
 		5B9F19DB17F524C600F65494 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B9F19D817F524C600F65494 /* Default@2x.png */; };
 		73E4CE0AAEEE4A5A83700D2A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9700167D0728437283226067 /* libPods.a */; };
+		844BE6C51804DA6B00D28F78 /* NSDate+WeekdayName.m in Sources */ = {isa = PBXBuildFile; fileRef = 844BE6C41804DA6B00D28F78 /* NSDate+WeekdayName.m */; };
 		84CD7CD217F4F10600AEFE73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CD7CD117F4F10600AEFE73 /* Foundation.framework */; };
 		84CD7CD417F4F10600AEFE73 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CD7CD317F4F10600AEFE73 /* CoreGraphics.framework */; };
 		84CD7CD617F4F10600AEFE73 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CD7CD517F4F10600AEFE73 /* UIKit.framework */; };
@@ -65,6 +66,8 @@
 		5B9F19D617F524C600F65494 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		5B9F19D717F524C600F65494 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		5B9F19D817F524C600F65494 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		844BE6C31804DA6B00D28F78 /* NSDate+WeekdayName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+WeekdayName.h"; sourceTree = "<group>"; };
+		844BE6C41804DA6B00D28F78 /* NSDate+WeekdayName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+WeekdayName.m"; sourceTree = "<group>"; };
 		84CD7CCE17F4F10600AEFE73 /* HannahLunchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HannahLunchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CD7CD117F4F10600AEFE73 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		84CD7CD317F4F10600AEFE73 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -177,6 +180,8 @@
 				1A66324C17FEF4CD00BCDBCB /* MathMacros.h */,
 				1A66324917FEF18800BCDBCB /* UIColor+RandomColor.h */,
 				1A66324A17FEF18800BCDBCB /* UIColor+RandomColor.m */,
+				844BE6C31804DA6B00D28F78 /* NSDate+WeekdayName.h */,
+				844BE6C41804DA6B00D28F78 /* NSDate+WeekdayName.m */,
 				1EE7D14617F4FFD600E3C986 /* Categories */,
 				84CD7CE017F4F10600AEFE73 /* AppDelegate.h */,
 				84CD7CE117F4F10600AEFE73 /* AppDelegate.m */,
@@ -402,6 +407,7 @@
 				84CD7D0417F4F61800AEFE73 /* ImageMenuViewController.m in Sources */,
 				84CD7CE217F4F10600AEFE73 /* AppDelegate.m in Sources */,
 				84CD7CDE17F4F10600AEFE73 /* main.m in Sources */,
+				844BE6C51804DA6B00D28F78 /* NSDate+WeekdayName.m in Sources */,
 				1A6F77CA17F77777004B7FE5 /* TextMenuViewController.m in Sources */,
 				1A66324B17FEF18800BCDBCB /* UIColor+RandomColor.m in Sources */,
 				1EE7D14517F4FFD200E3C986 /* UIAlertView+ShowAlert.m in Sources */,
