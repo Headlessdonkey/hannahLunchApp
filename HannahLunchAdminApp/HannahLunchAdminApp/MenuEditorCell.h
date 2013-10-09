@@ -19,4 +19,8 @@
 @property (strong, nonatomic) IBOutlet UILabel *sideDishesLabel;
 @property (strong, nonatomic) IBOutlet UITextField *sideDishesTextField;
 
++ (NSString*)reuseIdentifier;
+
+- (id)init;
+
 @end

@@ -10,20 +10,23 @@
 
 @implementation MenuEditorCell
 
-- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+
+- (id)init
 {
-    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
-    if (self) {
-        // Initialization code
+    self = [super initWithStyle:UITableViewCellStyleDefault
+                reuseIdentifier:[[self class] reuseIdentifier]];
+    if (self == nil)
+    {
+        return nil;
     }
     return self;
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated
-{
-    [super setSelected:selected animated:animated];
 
-    // Configure the view for the selected state
++ (NSString*)reuseIdentifier
+{
+    return [[self class] description];
 }
+
 
 @end
