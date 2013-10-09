@@ -47,6 +47,17 @@
                     </view>
                     <navigationItem key="navigationItem" id="IFh-MM-yBm">
                         <nil key="title"/>
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="347-x7-a2A">
+                            <rect key="frame" x="68" y="6" width="184" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="Enter Menu">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <segue destination="IuM-wB-drv" kind="push" id="zPt-vn-hTv"/>
+                            </connections>
+                        </button>
                     </navigationItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <connections>
@@ -68,7 +79,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="126" id="5TT-ga-Jb7" customClass="MenuEditorCell">
-                                <rect key="frame" x="0.0" y="86" width="320" height="126"/>
+                                <rect key="frame" x="0.0" y="22" width="320" height="126"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5TT-ga-Jb7" id="bGY-gZ-gA3">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="125"/>
@@ -125,7 +136,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="90O-6D-otY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-79" y="806"/>
+            <point key="canvasLocation" x="205" y="794"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="K9A-hr-att">
@@ -135,7 +146,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="wzB-3I-DV2" kind="relationship" relationship="rootViewController" id="1tI-2l-2so"/>
+                        <segue destination="7Sm-B1-bia" kind="relationship" relationship="rootViewController" id="Y5h-pI-bSx"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AZ4-YB-Fan" userLabel="First Responder" sceneMemberID="firstResponder"/>
