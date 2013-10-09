@@ -181,6 +181,8 @@
     [mainDishLabel setText:mainDish];
     [sidesLabel setText:sideDishes];
     
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
     return cell;
 }
 
