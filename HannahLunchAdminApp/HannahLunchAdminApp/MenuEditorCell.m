@@ -10,20 +10,31 @@
 
 @implementation MenuEditorCell
 
-- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+
+- (void)awakeFromNib
 {
-    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
-    if (self) {
-        // Initialization code
-    }
-    return self;
+    UIGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self
+                                                                              action:@selector(_cellWasTapped:)];
+    [self addGestureRecognizer:recognizer];
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated
-{
-    [super setSelected:selected animated:animated];
 
-    // Configure the view for the selected state
+- (void)_cellWasTapped:(id)sender
+{
+    [self _hideKeyboardWhenUserTapsOutsideOfATextField];
 }
+
+
+- (void)_hideKeyboardWhenUserTapsOutsideOfATextField
+{
+    [self endEditing:YES];
+}
+
+
++ (NSString*)reuseIdentifier
+{
+    return [[self class] description];
+}
+
 
 @end

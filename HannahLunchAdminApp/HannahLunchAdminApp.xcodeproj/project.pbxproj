@@ -10,6 +10,7 @@
 		1E6BD8731804E2E30025B27B /* ChalkboardBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1E6BD8721804E2E30025B27B /* ChalkboardBackground.jpg */; };
 		5BF735E61804D6F8003E8D6D /* MenuEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF735E51804D6F8003E8D6D /* MenuEditorViewController.m */; };
 		5BF735E91804D847003E8D6D /* MenuEditorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF735E81804D847003E8D6D /* MenuEditorCell.m */; };
+		5BF735ED1804E05D003E8D6D /* NSString+DayOfWeekForInteger.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF735EC1804E05D003E8D6D /* NSString+DayOfWeekForInteger.m */; };
 		844F06E117F513FA00BD1AC8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844F06D617F511B600BD1AC8 /* ViewController.m */; };
 		844F06E417F5153D00BD1AC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844F06E217F5153D00BD1AC8 /* Main.storyboard */; };
 		844F06E817F5209900BD1AC8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844F06E717F5209900BD1AC8 /* SystemConfiguration.framework */; };
@@ -56,6 +57,8 @@
 		5BF735E51804D6F8003E8D6D /* MenuEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuEditorViewController.m; sourceTree = "<group>"; };
 		5BF735E71804D847003E8D6D /* MenuEditorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuEditorCell.h; sourceTree = "<group>"; };
 		5BF735E81804D847003E8D6D /* MenuEditorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuEditorCell.m; sourceTree = "<group>"; };
+		5BF735EB1804E05D003E8D6D /* NSString+DayOfWeekForInteger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DayOfWeekForInteger.h"; sourceTree = "<group>"; };
+		5BF735EC1804E05D003E8D6D /* NSString+DayOfWeekForInteger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DayOfWeekForInteger.m"; sourceTree = "<group>"; };
 		71CD3B02B0154D3B886000B6 /* libPods-HannahLunchAdminAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HannahLunchAdminAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		844F06D517F511B600BD1AC8 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		844F06D617F511B600BD1AC8 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -127,6 +130,8 @@
 				5BF735E51804D6F8003E8D6D /* MenuEditorViewController.m */,
 				5BF735E71804D847003E8D6D /* MenuEditorCell.h */,
 				5BF735E81804D847003E8D6D /* MenuEditorCell.m */,
+				5BF735EB1804E05D003E8D6D /* NSString+DayOfWeekForInteger.h */,
+				5BF735EC1804E05D003E8D6D /* NSString+DayOfWeekForInteger.m */,
 			);
 			name = "Menu Editor 2";
 			sourceTree = "<group>";
@@ -404,6 +409,7 @@
 				5BF735E91804D847003E8D6D /* MenuEditorCell.m in Sources */,
 				84CD7D2017F4FD5900AEFE73 /* main.m in Sources */,
 				5BF735E61804D6F8003E8D6D /* MenuEditorViewController.m in Sources */,
+				5BF735ED1804E05D003E8D6D /* NSString+DayOfWeekForInteger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
