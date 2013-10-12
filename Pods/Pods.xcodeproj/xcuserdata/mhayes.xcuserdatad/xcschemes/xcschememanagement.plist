@@ -25,6 +25,11 @@
 			<key>orderHint</key>
 			<integer>5</integer>
 		</dict>
+		<key>Pods-HannahLunchAppTests-OCMockito.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 		<key>Pods-HannahLunchAppTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -49,6 +54,16 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>1700B66F738342C5B1D9E4A3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>549A9633C2B243A4A8F1D350</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>57F4E5D0B2AC4E4E819A23C2</key>
 		<dict>
 			<key>primary</key>
@@ -59,7 +74,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>7F6770051C5B4B8DAB09296B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>864842320B364CEF98958D7A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>A0F0ACFBFE0A42D4BA2E4155</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A81A6F7B0A184C279694CB3D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A8829E9B3F7C43D58427BD38</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -70,6 +105,11 @@
 			<true/>
 		</dict>
 		<key>BAEDC3F5AB45492AB4FDC8B0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C60E815E1D6B4D80A5E7B51E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

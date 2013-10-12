@@ -24,6 +24,7 @@
 		844BE6CF1804E32F00D28F78 /* ChalkboardBackground_480x640.png in Resources */ = {isa = PBXBuildFile; fileRef = 844BE6CE1804E32F00D28F78 /* ChalkboardBackground_480x640.png */; };
 		844BE6D11804E38100D28F78 /* ChalkboardBackground_640x960.png in Resources */ = {isa = PBXBuildFile; fileRef = 844BE6D01804E38100D28F78 /* ChalkboardBackground_640x960.png */; };
 		844BE6D51804E5A700D28F78 /* ChalkboardBackground_640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = 844BE6D41804E5A700D28F78 /* ChalkboardBackground_640x1136.png */; };
+		845C10301809621D00FF7FAF /* TextMenuViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 845C102F1809621D00FF7FAF /* TextMenuViewControllerTests.m */; };
 		84CD7CD217F4F10600AEFE73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CD7CD117F4F10600AEFE73 /* Foundation.framework */; };
 		84CD7CD417F4F10600AEFE73 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CD7CD317F4F10600AEFE73 /* CoreGraphics.framework */; };
 		84CD7CD617F4F10600AEFE73 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CD7CD517F4F10600AEFE73 /* UIKit.framework */; };
@@ -71,6 +72,8 @@
 		844BE6CE1804E32F00D28F78 /* ChalkboardBackground_480x640.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChalkboardBackground_480x640.png; sourceTree = "<group>"; };
 		844BE6D01804E38100D28F78 /* ChalkboardBackground_640x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChalkboardBackground_640x960.png; sourceTree = "<group>"; };
 		844BE6D41804E5A700D28F78 /* ChalkboardBackground_640x1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChalkboardBackground_640x1136.png; sourceTree = "<group>"; };
+		845C102F1809621D00FF7FAF /* TextMenuViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextMenuViewControllerTests.m; sourceTree = "<group>"; };
+		845C1033180962CD00FF7FAF /* HannahLunchAppTests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HannahLunchAppTests-Prefix.pch"; sourceTree = "<group>"; };
 		84CD7CCE17F4F10600AEFE73 /* HannahLunchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HannahLunchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CD7CD117F4F10600AEFE73 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		84CD7CD317F4F10600AEFE73 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -227,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				84CD7CF117F4F10600AEFE73 /* Supporting Files */,
+				845C102F1809621D00FF7FAF /* TextMenuViewControllerTests.m */,
 			);
 			path = HannahLunchAppTests;
 			sourceTree = "<group>";
@@ -236,6 +240,7 @@
 			children = (
 				84CD7CF217F4F10600AEFE73 /* HannahLunchAppTests-Info.plist */,
 				84CD7CF317F4F10600AEFE73 /* InfoPlist.strings */,
+				845C1033180962CD00FF7FAF /* HannahLunchAppTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -431,6 +436,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845C10301809621D00FF7FAF /* TextMenuViewControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,7 +592,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "HannahLunchApp/HannahLunchApp-Prefix.pch";
+				GCC_PREFIX_HEADER = "HannahLunchAppTests/HannahLunchAppTests-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -610,7 +616,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "HannahLunchApp/HannahLunchApp-Prefix.pch";
+				GCC_PREFIX_HEADER = "HannahLunchAppTests/HannahLunchAppTests-Prefix.pch";
 				INFOPLIST_FILE = "HannahLunchAppTests/HannahLunchAppTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";

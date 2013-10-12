@@ -6,4 +6,5 @@ pod 'Parse'
 target :HannahLunchAppTests, :exclusive => true do
     pod 'OCMock'
     pod 'OCHamcrest'
+    pod 'OCMockito'
 end
