@@ -35,7 +35,7 @@
 
 - (void)testMenuTableViewOutlet
 {
-    assertThat(self._sut.view, is(notNilValue()));`
+    assertThat(self._sut.view, is(notNilValue()));
 }
 
 @end
