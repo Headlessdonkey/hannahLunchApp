@@ -35,7 +35,6 @@
 		84CD7CEC17F4F10600AEFE73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CD7CD117F4F10600AEFE73 /* Foundation.framework */; };
 		84CD7CED17F4F10600AEFE73 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CD7CD517F4F10600AEFE73 /* UIKit.framework */; };
 		84CD7CF517F4F10600AEFE73 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84CD7CF317F4F10600AEFE73 /* InfoPlist.strings */; };
-		84CD7CF717F4F10600AEFE73 /* HannahLunchAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD7CF617F4F10600AEFE73 /* HannahLunchAppTests.m */; };
 		84CD7D0417F4F61800AEFE73 /* ImageMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD7D0317F4F61800AEFE73 /* ImageMenuViewController.m */; };
 		84CD7D0617F4F63400AEFE73 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CD7D0517F4F63400AEFE73 /* Main_iPhone.storyboard */; };
 /* End PBXBuildFile section */
@@ -87,7 +86,6 @@
 		84CD7CEA17F4F10600AEFE73 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		84CD7CF217F4F10600AEFE73 /* HannahLunchAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HannahLunchAppTests-Info.plist"; sourceTree = "<group>"; };
 		84CD7CF417F4F10600AEFE73 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		84CD7CF617F4F10600AEFE73 /* HannahLunchAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HannahLunchAppTests.m; sourceTree = "<group>"; };
 		84CD7D0217F4F61800AEFE73 /* ImageMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageMenuViewController.h; sourceTree = "<group>"; };
 		84CD7D0317F4F61800AEFE73 /* ImageMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageMenuViewController.m; sourceTree = "<group>"; };
 		84CD7D0517F4F63400AEFE73 /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
@@ -228,7 +226,6 @@
 		84CD7CF017F4F10600AEFE73 /* HannahLunchAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				84CD7CF617F4F10600AEFE73 /* HannahLunchAppTests.m */,
 				84CD7CF117F4F10600AEFE73 /* Supporting Files */,
 			);
 			path = HannahLunchAppTests;
@@ -434,7 +431,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84CD7CF717F4F10600AEFE73 /* HannahLunchAppTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
