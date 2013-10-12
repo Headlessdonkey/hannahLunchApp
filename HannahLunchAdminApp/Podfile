@@ -6,7 +6,7 @@ pod 'MBProgressHUD'
 pod 'UIAlertView+Blocks'
 pod 'AFNetworking', '~> 1.3.3'
 
-target :HannahLunchAdminAppTests, :exclusive => true do
+target :HannahLunchAdminAppTests do
     pod 'OCMock'
     pod 'OCHamcrest'
 end

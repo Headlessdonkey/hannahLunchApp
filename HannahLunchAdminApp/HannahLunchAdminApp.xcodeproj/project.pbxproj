@@ -20,6 +20,7 @@
 		844F06FE17F52C5E00BD1AC8 /* icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 844F06FA17F52C5E00BD1AC8 /* icon-40@2x.png */; };
 		844F06FF17F52C5E00BD1AC8 /* icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 844F06FB17F52C5E00BD1AC8 /* icon-60@2x.png */; };
 		844F070017F52C5E00BD1AC8 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 844F06FC17F52C5E00BD1AC8 /* iTunesArtwork */; };
+		845C1035180968E100FF7FAF /* ViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 845C1034180968E100FF7FAF /* ViewControllerTests.m */; };
 		84673E8117FF516A006BE2E6 /* icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 84673E8017FF516A006BE2E6 /* icon-29.png */; };
 		84855AA017FF6822000AEEF2 /* MenuInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84855A9F17FF6822000AEEF2 /* MenuInputViewController.m */; };
 		84CD7D1417F4FD5900AEFE73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CD7D1317F4FD5900AEFE73 /* Foundation.framework */; };
@@ -71,6 +72,8 @@
 		844F06FA17F52C5E00BD1AC8 /* icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40@2x.png"; sourceTree = "<group>"; };
 		844F06FB17F52C5E00BD1AC8 /* icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-60@2x.png"; sourceTree = "<group>"; };
 		844F06FC17F52C5E00BD1AC8 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		845C1034180968E100FF7FAF /* ViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerTests.m; sourceTree = "<group>"; };
+		845C10361809693200FF7FAF /* HannahLunchAdminAppTests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HannahLunchAdminAppTests-Prefix.pch"; sourceTree = "<group>"; };
 		84673E8017FF516A006BE2E6 /* icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-29.png"; sourceTree = "<group>"; };
 		84855A9E17FF6822000AEEF2 /* MenuInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuInputViewController.h; sourceTree = "<group>"; };
 		84855A9F17FF6822000AEEF2 /* MenuInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuInputViewController.m; sourceTree = "<group>"; };
@@ -216,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				84CD7D3917F4FD5A00AEFE73 /* Supporting Files */,
+				845C1034180968E100FF7FAF /* ViewControllerTests.m */,
 			);
 			path = HannahLunchAdminAppTests;
 			sourceTree = "<group>";
@@ -225,6 +229,7 @@
 			children = (
 				84CD7D3A17F4FD5A00AEFE73 /* HannahLunchAdminAppTests-Info.plist */,
 				84CD7D3B17F4FD5A00AEFE73 /* InfoPlist.strings */,
+				845C10361809693200FF7FAF /* HannahLunchAdminAppTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -420,6 +425,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845C1035180968E100FF7FAF /* ViewControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,7 +577,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 84C7D5A9550E4A4BA90943A4 /* Pods-HannahLunchAdminAppTests.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HannahLunchAdminApp.app/HannahLunchAdminApp";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -579,7 +585,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "HannahLunchAdminApp/HannahLunchAdminApp-Prefix.pch";
+				GCC_PREFIX_HEADER = "HannahLunchAdminAppTests/HannahLunchAdminAppTests-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -595,7 +601,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 84C7D5A9550E4A4BA90943A4 /* Pods-HannahLunchAdminAppTests.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HannahLunchAdminApp.app/HannahLunchAdminApp";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -603,7 +609,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "HannahLunchAdminApp/HannahLunchAdminApp-Prefix.pch";
+				GCC_PREFIX_HEADER = "HannahLunchAdminAppTests/HannahLunchAdminAppTests-Prefix.pch";
 				INFOPLIST_FILE = "HannahLunchAdminAppTests/HannahLunchAdminAppTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
