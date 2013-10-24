@@ -1,6 +1,7 @@
 package com.example.HannahLunchApp;
 
 
+import android.graphics.Typeface;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -27,6 +28,8 @@ public class MenuFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.menufragment, container, false);
         textView = (TextView) view.findViewById(R.id.textView);
+        Typeface font = Typeface.createFromAsset(getActivity().getAssets(), "eraser.ttf");
+        textView.setTypeface(font);
         return view;
     }
 

@@ -11,17 +11,17 @@ public class FragmentAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int i) {
-
-        if(i == 0 ){
-            return new PictureFragment();
-        }
-        else{
+//
+//        if(i == 0 ){
+//            return new PictureFragment();
+//        }
+//        else{
             return new MenuFragment();
-        }
+ //       }
     }
 
     @Override
     public int getCount() {
-        return 2;
+        return 1;
     }
 }
