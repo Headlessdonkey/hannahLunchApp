@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="KsN-ff-vrY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="KsN-ff-vrY">
     <dependencies>
         <deployment defaultVersion="1536" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -174,7 +174,6 @@
         <!--Menu Input View Controller-->
         <scene sceneID="ZiA-jS-W0K">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DqP-jo-QCn" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="MenuInputViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IuM-wB-drv" customClass="MenuInputViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="46x-s3-Qlf"/>
@@ -200,6 +199,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="kG3-uv-AQ0"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DqP-jo-QCn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="520" y="61"/>
         </scene>
