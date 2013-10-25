@@ -19,4 +19,4 @@ To calculate complementary colors
 	
 	
 Try downloading it for iPhone!
-<a href="itms-services://?action=download-manifest&url=itms-services://?action=download-manifest&url=https://raw.github.com/Headlessdonkey/hannahLunchApp/master/HannahLunchApp.ipa" id="text">
+<a href="itms-services://?action=download-manifest&url=itms-services://?action=download-manifest&url=https://raw.github.com/Headlessdonkey/hannahLunchApp/master/HannahLunchApp.ipa" id="text">IPA</a>
