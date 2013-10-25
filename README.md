@@ -15,3 +15,8 @@ To calculate complementary colors
 	https://github.com/alessani/ColorConverter/blob/master/ColorSpaceUtilities.h
 3) follow the algorithm here to calculate complementary colors
 	http://serennu.com/colour/rgbtohsl.php
+	
+	
+	
+Try downloading it for iPhone!
+<a href="itms-services://?action=download-manifest&url=itms-services://?action=download-manifest&url=https://raw.github.com/Headlessdonkey/hannahLunchApp/master/HannahLunchApp.ipa" id="text">
