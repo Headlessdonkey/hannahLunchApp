@@ -221,8 +221,11 @@
         NSString *mainKey = [NSString stringWithFormat:@"%@.main",dayOftheWeek];
         NSString *sideKey = [NSString stringWithFormat:@"%@.sides",dayOftheWeek];
         MenuEditorCell *cell = [tableCells objectAtIndex:i];
-        [dict setObject:cell.mainDishTextField.text forKey:mainKey];
-        [dict setObject:cell.sideDishesTextField.text forKey:sideKey];
+        if (cell.mainDishTextField.text.length > 0 && cell.sideDishesTextField.text.length > 0)
+        {
+            [dict setObject:cell.mainDishTextField.text forKey:mainKey];
+            [dict setObject:cell.sideDishesTextField.text forKey:sideKey];
+        }
     }
     
     return dict;
