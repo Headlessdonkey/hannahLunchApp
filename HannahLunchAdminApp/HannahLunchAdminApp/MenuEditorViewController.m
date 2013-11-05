@@ -11,6 +11,7 @@
 #import "NSString+DayOfWeekForInteger.h"
 #import <Parse/Parse.h>
 #import "UIAlertView+ShowAlert.h"
+#import "MBProgressHUD.h"
 
 @interface MenuEditorViewController ()
 {
@@ -39,6 +40,13 @@
     [super viewDidLoad];
 
     self.tableView.allowsSelection = NO;
+}
+
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self pullCurrentMenu:nil];
 }
 
 
@@ -83,7 +91,10 @@
     [menuQuery orderByDescending:@"createdAt"];
     menuQuery.limit = 1;
     
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     [menuQuery findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
+        
         if(!error)
         {
             if([objects count] > 0)
