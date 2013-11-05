@@ -41,6 +41,7 @@
     self.tableView.allowsSelection = NO;
 }
 
+
 - (void)_fillTableCellsArray
 {
     tableCells = [[NSMutableArray alloc] init];
@@ -135,11 +136,15 @@
     NSString *mainKey = [NSString stringWithFormat:@"%@.main",dayOfTheWeek];
     NSString *sidesKey = [NSString stringWithFormat:@"%@.sides",dayOfTheWeek];
     
-    NSDictionary *menuForDay = @{@"dayOfTheWeek": [dayOfTheWeek uppercaseString],
-                                 @"mainDish": [dict objectForKey:mainKey],
-                                 @"sides": [dict objectForKey:sidesKey]};
-    
-    return [[NSDictionary alloc] initWithDictionary:menuForDay];
+    NSString *mainDish = [dict objectForKey:mainKey];
+    NSString *sideDish = [dict objectForKey:sidesKey];
+    NSDictionary *menuForDay = @{};
+    if (dayOfTheWeek.length > 0 && mainDish.length > 0 && sideDish.length > 0)
+    {
+        menuForDay = @{@"dayOfTheWeek": [dayOfTheWeek uppercaseString],
+                       @"mainDish": [dict objectForKey:mainKey],
+                       @"sides": [dict objectForKey:sidesKey]};
+    }
     
     return menuForDay;
 }
